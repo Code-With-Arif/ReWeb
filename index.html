@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+  <link rel="shortcut icon" href="" type="image/x-icon" />
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <title>CodePen-SPILAB</title>
+	<script src="//cdn.jsdelivr.net/npm/eruda"></script><script>eruda.init();</script>
+</head>
+<body>
+    <header id="mainHeader">
+        <div id="logoDiv">
+            <h2>ReWeb-</h2>
+        </div>
+        <div id="Nav">
+            <button class="button" onclick="openMenuWindow()"><img src="./media/svg/settings_light.svg" alt="settings" /></button>
+            <button class="button" id="navHtml" onclick="HtmlTab()" style="border-top: 2px solid #fff">Html</button>
+            <button class="button" id="navCss" onclick="CssTab()">Css</button>
+            <button class="button" id="navJs" onclick="JsTab()">Js</button>
+            <button class="button" id="navResult" onclick="ResultTab()" style="border-top: 2px solid #fff">Result</button>
+            <button class="button" onclick=""><img src="./media/svg/3dot_varti_light.svg" alt="More" /></button>
+        </div>
+    </header>
+    
+    
+	<section id="editor">
+	    <div id="html-div">
+	        <header class="tab-header">
+	            <h2 class="heading">HTML</h2>
+	            <button class="close-open-tab" onclick="">ok</button>
+	        </header>
+	        <textarea id="html-code" name="html-code" class="code"></textarea>
+	    </div>
+	    
+	    <div id="css-div">
+	        <header class="tab-header">
+	            <h2 class="heading">CSS</h2>
+	            <button class="close-open-tab" onclick="">ok</button>
+	        </header>
+	        <textarea id="css-code" name="css-code" class="code"></textarea>
+	    </div>
+	    
+	    <div id="js-div">
+	        <header class="tab-header">
+	            <h2 class="heading">JS</h2>
+	            <button class="close-open-tab" onclick="run()">ok</button>
+	        </header>
+	        <button id="RunJs" onclick="jsRun()">Run</button>
+	        <textarea id="js-code" name="js-code" class="code"></textarea>
+	    </div>
+	</section>
+	
+	
+    <section id="menuWindow">
+        <button id="closeMenuWindow" onclick="closeMenuWindow()">Close</button>
+        <div class="overlay" onclick="closeMenuWindow()"></div>
+        <div id="menuBody">
+            <header id="menuNav">
+                <h3 id="menuNavHeading">Code Settings</h3>
+                <button class="button" id="htmlMenuNav" onclick="HtmlMenuTab()"  style="border-top: 2px solid #fff">HTML</button>
+                <button class="button" id="cssMenuNav" onclick="CssMenuTab()">CSS</button>
+                <button class="button" id="jsMenuNav" onclick="JsMenuTab()">JS</button>
+            </header>
+            <div id="htmlMenu">
+                <h4>* Comming Soon...</h4>
+            </div>
+            <div id="cssMenu">
+                <div id="customStyleSheets">
+                    <p>Add Custom Css Files:</p>
+                    <div id="customStyleSheetsBody">
+                        <div class="customStyleSheet" id="customStyleSheet-1">
+                            <input type="text" name="stylesheet-1" class="stylesheet" id="stylesheet-1" placeholder="https://yourdomain.com/style.css" />
+                            <button class="stylesheetDel" id="stylesheetDel-1" onclick="deleteThis('customStyleSheet-1')">×</button>
+                        </div>
+                    </div>
+                    <button class="button" id="addStyleSheet" onclick="iframeHeadAdd()">Done</button>
+                    <button class="button" id="addNewStyleSheet" onclick="addNewStyleSheet()">add new</button>
+                </div>
+            </div>
+            <div id="jsMenu">
+                <div id="customScripts">
+                    <p>Add Custom Js Files:</p>
+                    <div id="customScriptsBody">
+                        <div class="customScript" id="customScript-1">
+                            <input type="text" name="script-1" class="script" id="script-1" placeholder="https://yourdomain.com/script.js" />
+                            <button class="scriptDel" id="scriptDel-1" onclick="deleteThis('customScript-1')">×</button>
+                        </div>
+                    </div>
+                    <button class="button" id="addScript" onclick="iframeHeadAdd()">Done</button>
+                    <button class="button" id="addNewScript" onclick="addNewScript()">add new</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+	<section id="result">
+	    <iframe id="web-result" frameborder="0"></iframe>
+	</section>
+	
+	
+	
+	<footer id="footer">
+	    <button class="button" id="tools" onclick=""><img src="./media/svg/up_arrow_light.svg" alt="Tools" /></button>
+	    <!--<div id="toolsBar">
+	        <button class="button" id="consoleBar" onclick="">Console</button>
+	    </div>-->
+	</footer>
+	<div class="output"></div>
+	<!--<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script language="javascript">
+        var realConsoleLog = console.error;
+        console.log = function () {
+            var message = [].join.call(arguments, " ");
+            $(".output").text(message);
+            realConsoleLog.apply(console, arguments);
+        };
+    </script>-->
+	
+    <script src="js/index.js"></script>
+</body>
+</html>

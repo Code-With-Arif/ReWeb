@@ -1,0 +1,211 @@
+:root {
+  --bg-dark: #171717;
+  --bg-light: #fff;
+  --light-dark:#000;
+  --dark-light:#fff;
+  --white: #ffffff;
+  --dark-btn: #000;
+  --light-btn: #fff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    /*overflow: hidden;*/
+    background-color: var(--bg-dark);
+    color: var(--white);
+}
+#mainHeader{
+    width: 100%;
+    height: 11.7vh;
+    text-align: center;
+}
+#logoDiv{
+    text-align: center;
+}
+#Nav{
+    margin-bottom: 5px;
+}
+.button{
+    width: 50px;
+    margin: 0% 0.4%;
+    border: 0px;
+    padding: 6px 3px;
+    outline: none;
+    border-radius: 8px;
+    color: var(--white);
+    background-color: #111;
+}
+#mainHeader #Nav button:nth-child(1){
+    width: 25px;
+    float: left;
+    margin-left: 4px;
+}
+#mainHeader #Nav button:nth-child(6){
+    width: 25px;
+    float: right;
+    margin-right: 4px;
+}
+.tab-header{
+    display: none;
+}
+#editor{
+    height: 40vh;
+}
+.code{
+    width: 100%;
+    resize: none;
+    height: 40vh;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #171717;
+    background-color: #111;
+    color: var(--white);
+    padding: 10px;
+}
+#css-div, #js-div{
+    display: none;
+}
+#RunJs{
+    width: 50px;
+    margin: 0% 0.4%;
+    border: 0.5px solid #fff;
+    padding: 6px 3px;
+    outline: none;
+    border-radius: 8px;
+    color: var(--white);
+    background-color: #111;
+    position: absolute;
+    right: 0px;
+    bottom: 51vh;
+}
+#RunJs:hover{
+    background-color: #666;
+}
+#result{
+    width: 100%;
+    background-color: #fff;
+    height: 41.5vh;
+}
+#result #web-result{
+    width: 100%;
+    height: 100%;
+}
+#menuWindow{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    display: none;
+}
+#closeMenuWindow{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    border: None;
+    background-color: transparent;
+    outline: none;
+    z-index: 2001;
+    color: #fff;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    background-color: #333;
+    opacity: 70%;
+    z-index: 2000;
+}
+#menuBody{
+    height: 80vh;
+    width: 85vw;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: var(--light-dark);
+    position: absolute;
+    z-index: 2001;
+    top: 50%;
+    left: 50%;
+    margin-top: -40vh;
+    margin-left: -42.5vw;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+                rgba(0, 0, 0, 0.12) 0px -12px 30px,
+                rgba(0, 0, 0, 0.12) 0px 4px 6px,
+                rgba(0, 0, 0, 0.17) 0px 12px 13px,
+                rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#menuNav{
+    text-align: center;
+}
+#menuNavHeading{
+    text-align: left;
+    padding: 5px 0px;
+}
+#cssMenu,#jsMenu{
+    display: none;
+}
+.customStyleSheet,.customScript{
+    margin-bottom: 10px;
+}
+.stylesheet,.script{
+    width: 86%;
+    outline: none;
+    border: none;
+    color: #fff;
+    padding: 5px;
+    border-radius: 7px;
+    background-color: #111;
+}
+.stylesheetDel,.scriptDel{
+    width: 10%;
+    font-size: px;
+    background-color: #000;
+    border: none;
+    color: #fff;
+    padding: 0px;
+    outline: none;
+}
+#addStyleSheet,#addScript{
+    float: right;
+}
+#addNewStyleSheet,#addNewScript{
+    width: 80px;
+    float: right;
+}
+#htmlMenu,#cssMenu,#jsMenu{
+    overflow: auto;
+}
+#customStyleSheetsBody,#customScriptsBody{
+    overflow: auto;
+    max-height: 35vh;
+}
+#tools{
+    margin: 8px;
+    height: 25px;
+    background-color: #333;
+}
+#footer{
+    position: relative;
+    background-color: transparent;
+    height: 5.3vh;
+}
+#tools img{
+    margin-top: -10px;
+}
+#toolsBar{
+    width: 100%;
+    height: 5.2vh;
+    position: absolute;
+    bottom: 5.3vh;
+    background-color: #333;
+    padding: 2px;
+}
+#consoleBar{
+    margin: 2px;
+    padding: 4px;
+    width: 60px;
+}
