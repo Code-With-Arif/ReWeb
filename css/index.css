@@ -11,9 +11,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    user-select: none;
 }
 html, body{
-    /*overflow: hidden;*/
+    overflow: hidden;
     background-color: var(--bg-dark);
     color: var(--white);
 }
@@ -76,10 +77,10 @@ html, body{
     outline: none;
     border-radius: 8px;
     color: var(--white);
+    float: right;
     background-color: #111;
     position: absolute;
     right: 0px;
-    bottom: 51vh;
 }
 #RunJs:hover{
     background-color: #666;

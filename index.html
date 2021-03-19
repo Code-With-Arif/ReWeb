@@ -7,12 +7,11 @@
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <title>CodePen-SPILAB</title>
-	<script src="//cdn.jsdelivr.net/npm/eruda"></script><script>eruda.init();</script>
 </head>
 <body>
     <header id="mainHeader">
         <div id="logoDiv">
-            <h2>ReWeb-</h2>
+            <h2  style="display:inline-block;padding:10px">ReWeb -</h2><h3 style="display:inline-block">Arif-2005</h3>
         </div>
         <div id="Nav">
             <button class="button" onclick="openMenuWindow()"><img src="./media/svg/settings_light.svg" alt="settings" /></button>
@@ -23,25 +22,25 @@
             <button class="button" onclick=""><img src="./media/svg/3dot_varti_light.svg" alt="More" /></button>
         </div>
     </header>
-    
-    
+
+
 	<section id="editor">
 	    <div id="html-div">
 	        <header class="tab-header">
 	            <h2 class="heading">HTML</h2>
 	            <button class="close-open-tab" onclick="">ok</button>
 	        </header>
-	        <textarea id="html-code" name="html-code" class="code"></textarea>
+	        <textarea id="html-code" name="html-code" class="code"><h1>Hello</h1></textarea>
 	    </div>
-	    
+
 	    <div id="css-div">
 	        <header class="tab-header">
 	            <h2 class="heading">CSS</h2>
 	            <button class="close-open-tab" onclick="">ok</button>
 	        </header>
-	        <textarea id="css-code" name="css-code" class="code"></textarea>
+	        <textarea id="css-code" name="css-code" class="code">body{background:#f00}</textarea>
 	    </div>
-	    
+
 	    <div id="js-div">
 	        <header class="tab-header">
 	            <h2 class="heading">JS</h2>
@@ -51,8 +50,8 @@
 	        <textarea id="js-code" name="js-code" class="code"></textarea>
 	    </div>
 	</section>
-	
-	
+
+
     <section id="menuWindow">
         <button id="closeMenuWindow" onclick="closeMenuWindow()">Close</button>
         <div class="overlay" onclick="closeMenuWindow()"></div>
@@ -94,22 +93,22 @@
             </div>
         </div>
     </section>
-    
-    
+
+
 	<section id="result">
 	    <iframe id="web-result" frameborder="0"></iframe>
 	</section>
-	
-	
-	
+
+
+
 	<footer id="footer">
 	    <button class="button" id="tools" onclick=""><img src="./media/svg/up_arrow_light.svg" alt="Tools" /></button>
 	    <!--<div id="toolsBar">
 	        <button class="button" id="consoleBar" onclick="">Console</button>
 	    </div>-->
 	</footer>
-	<div class="output"></div>
-	<!--<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<!--<div class="output"></div>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script language="javascript">
         var realConsoleLog = console.error;
         console.log = function () {
@@ -118,7 +117,8 @@
             realConsoleLog.apply(console, arguments);
         };
     </script>-->
-	
-    <script src="js/index.js"></script>
+
+    <script src="js/function.js"></script>
+    <script src="js/logic.js"></script>
 </body>
 </html>
