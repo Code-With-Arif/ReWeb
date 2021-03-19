@@ -20,7 +20,7 @@ html, body{
 }
 #mainHeader{
     width: 100%;
-    height: 11.7vh;
+    min-height: 88px;
     text-align: center;
 }
 #logoDiv{
@@ -40,25 +40,32 @@ html, body{
     background-color: #111;
 }
 #mainHeader #Nav button:nth-child(1){
-    width: 25px;
+    width: 30px;
     float: left;
     margin-left: 4px;
 }
 #mainHeader #Nav button:nth-child(6){
-    width: 25px;
+    width: 30px;
     float: right;
     margin-right: 4px;
 }
 .tab-header{
     display: none;
 }
+#mainCodeBody{
+    height: 83vh;
+    width: 100%;
+}
 #editor{
     height: 40vh;
+}
+#html-div,#css-div,#js-div{
+    height: 100%;
 }
 .code{
     width: 100%;
     resize: none;
-    height: 40vh;
+    height: 100%;
     outline: none;
     border: none;
     border-bottom: 2px solid #171717;
@@ -185,23 +192,24 @@ html, body{
     max-height: 35vh;
 }
 #tools{
-    margin: 8px;
+    margin: 0px;
     height: 25px;
     background-color: #333;
+    padding: 0px;
 }
 #footer{
     position: relative;
     background-color: transparent;
-    height: 5.3vh;
+    height: 30px;
 }
 #tools img{
-    margin-top: -10px;
+    margin-top: -6px;
 }
 #toolsBar{
     width: 100%;
     height: 5.2vh;
     position: absolute;
-    bottom: 5.3vh;
+    bottom: 30px;
     background-color: #333;
     padding: 2px;
 }

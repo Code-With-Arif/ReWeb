@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-  <link rel="shortcut icon" href="" type="image/x-icon" />
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="shortcut icon" href="./media/img/logo.png" type="image/x-icon" />
+  <link rel="stylesheet" media="screen and (max-width:600px)" href="css/index.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <title>CodePen-SPILAB</title>
+	<script src="//cdn.jsdelivr.net/npm/eruda"></script><script>eruda.init();</script>
 </head>
 <body>
     <header id="mainHeader">
@@ -22,36 +23,7 @@
             <button class="button" onclick=""><img src="./media/svg/3dot_varti_light.svg" alt="More" /></button>
         </div>
     </header>
-
-
-	<section id="editor">
-	    <div id="html-div">
-	        <header class="tab-header">
-	            <h2 class="heading">HTML</h2>
-	            <button class="close-open-tab" onclick="">ok</button>
-	        </header>
-	        <textarea id="html-code" name="html-code" class="code"><h1>Hello</h1></textarea>
-	    </div>
-
-	    <div id="css-div">
-	        <header class="tab-header">
-	            <h2 class="heading">CSS</h2>
-	            <button class="close-open-tab" onclick="">ok</button>
-	        </header>
-	        <textarea id="css-code" name="css-code" class="code">body{background:#f00}</textarea>
-	    </div>
-
-	    <div id="js-div">
-	        <header class="tab-header">
-	            <h2 class="heading">JS</h2>
-	            <button class="close-open-tab" onclick="run()">ok</button>
-	        </header>
-	        <button id="RunJs" onclick="jsRun()">Run</button>
-	        <textarea id="js-code" name="js-code" class="code"></textarea>
-	    </div>
-	</section>
-
-
+    
     <section id="menuWindow">
         <button id="closeMenuWindow" onclick="closeMenuWindow()">Close</button>
         <div class="overlay" onclick="closeMenuWindow()"></div>
@@ -93,14 +65,44 @@
             </div>
         </div>
     </section>
-
-
-	<section id="result">
-	    <iframe id="web-result" frameborder="0"></iframe>
-	</section>
-
-
-
+    
+    <section id="mainCodeBody">
+        
+	    <section id="editor">
+    	    <div id="html-div">
+    	        <header class="tab-header">
+    	            <h2 class="heading">HTML</h2>
+    	            <button class="close-open-tab" onclick="">ok</button>
+    	        </header>
+    	        <textarea id="html-code" name="html-code" class="code"><h1>Hello</h1></textarea>
+    	    </div>
+    	    
+    	    <div id="css-div">
+    	        <header class="tab-header">
+    	            <h2 class="heading">CSS</h2>
+    	            <button class="close-open-tab" onclick="">ok</button>
+    	        </header>
+    	        <textarea id="css-code" name="css-code" class="code">body{background:}</textarea>
+    	    </div>
+    	    
+    	    <div id="js-div">
+    	        <header class="tab-header">
+    	            <h2 class="heading">JS</h2>
+    	            <button class="close-open-tab" onclick="run()">ok</button>
+    	        </header>
+    	        <button id="RunJs" onclick="jsRun()">Run</button>
+    	        <textarea id="js-code" name="js-code" class="code"></textarea>
+    	    </div>
+    	</section>
+	
+	    <section id="result">
+	        <iframe id="web-result" frameborder="0"></iframe>
+	    </section>
+	
+    </section>
+	
+	
+	
 	<footer id="footer">
 	    <button class="button" id="tools" onclick=""><img src="./media/svg/up_arrow_light.svg" alt="Tools" /></button>
 	    <!--<div id="toolsBar">
@@ -117,7 +119,7 @@
             realConsoleLog.apply(console, arguments);
         };
     </script>-->
-
+	
     <script src="js/function.js"></script>
     <script src="js/logic.js"></script>
 </body>

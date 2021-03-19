@@ -29,6 +29,7 @@ NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
         }
     }
 }
+
 function iframeHeadAdd(){
     var iframeHead;
     let styleSheet = document.getElementsByClassName("customStyleSheet");
