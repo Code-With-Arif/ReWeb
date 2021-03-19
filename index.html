@@ -6,7 +6,7 @@
   <link rel="shortcut icon" href="./media/img/logo.png" type="image/x-icon" />
   <link rel="stylesheet" media="screen and (max-width:600px)" href="css/index.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <title>CodePen-SPILAB</title>
+  <title>ReWeb-SPILAB</title>
 	<script src="//cdn.jsdelivr.net/npm/eruda"></script><script>eruda.init();</script>
 </head>
 <body>
@@ -15,24 +15,24 @@
             <h2  style="display:inline-block;padding:10px">ReWeb -</h2><h3 style="display:inline-block">Arif-2005</h3>
         </div>
         <div id="Nav">
-            <button class="button" onclick="openMenuWindow()"><img src="./media/svg/settings_light.svg" alt="settings" /></button>
-            <button class="button" id="navHtml" onclick="HtmlTab()" style="border-top: 2px solid #fff">Html</button>
-            <button class="button" id="navCss" onclick="CssTab()">Css</button>
-            <button class="button" id="navJs" onclick="JsTab()">Js</button>
-            <button class="button" id="navResult" onclick="ResultTab()" style="border-top: 2px solid #fff">Result</button>
-            <button class="button" onclick=""><img src="./media/svg/3dot_varti_light.svg" alt="More" /></button>
+            <button class="button" id="menuSettings"><img src="./media/svg/settings_light.svg" alt="settings" /></button>
+            <button class="button" id="navHtml" style="border-top: 2px solid #fff">Html</button>
+            <button class="button" id="navCss">Css</button>
+            <button class="button" id="navJs">Js</button>
+            <button class="button" id="navResult" style="border-top: 2px solid #fff">Result</button>
+            <button class="button" id="menuTools" onclick=""><img src="./media/svg/3dot_varti_light.svg" alt="More" /></button>
         </div>
     </header>
     
     <section id="menuWindow">
-        <button id="closeMenuWindow" onclick="closeMenuWindow()">Close</button>
-        <div class="overlay" onclick="closeMenuWindow()"></div>
+        <button id="closeMenuWindow">Close</button>
+        <div class="overlay" id="closeMenuWindowDiv"></div>
         <div id="menuBody">
             <header id="menuNav">
                 <h3 id="menuNavHeading">Code Settings</h3>
-                <button class="button" id="htmlMenuNav" onclick="HtmlMenuTab()"  style="border-top: 2px solid #fff">HTML</button>
-                <button class="button" id="cssMenuNav" onclick="CssMenuTab()">CSS</button>
-                <button class="button" id="jsMenuNav" onclick="JsMenuTab()">JS</button>
+                <button class="button" id="htmlMenuNav" style="border-top: 2px solid #fff">HTML</button>
+                <button class="button" id="cssMenuNav">CSS</button>
+                <button class="button" id="jsMenuNav">JS</button>
             </header>
             <div id="htmlMenu">
                 <h4>* Comming Soon...</h4>
@@ -46,8 +46,8 @@
                             <button class="stylesheetDel" id="stylesheetDel-1" onclick="deleteThis('customStyleSheet-1')">×</button>
                         </div>
                     </div>
-                    <button class="button" id="addStyleSheet" onclick="iframeHeadAdd()">Done</button>
-                    <button class="button" id="addNewStyleSheet" onclick="addNewStyleSheet()">add new</button>
+                    <button class="button" id="addStyleSheet">Done</button>
+                    <button class="button" id="addNewStyleSheet">add new</button>
                 </div>
             </div>
             <div id="jsMenu">
@@ -59,8 +59,8 @@
                             <button class="scriptDel" id="scriptDel-1" onclick="deleteThis('customScript-1')">×</button>
                         </div>
                     </div>
-                    <button class="button" id="addScript" onclick="iframeHeadAdd()">Done</button>
-                    <button class="button" id="addNewScript" onclick="addNewScript()">add new</button>
+                    <button class="button" id="addScript">Done</button>
+                    <button class="button" id="addNewScript">add new</button>
                 </div>
             </div>
         </div>
@@ -82,15 +82,15 @@
     	            <h2 class="heading">CSS</h2>
     	            <button class="close-open-tab" onclick="">ok</button>
     	        </header>
-    	        <textarea id="css-code" name="css-code" class="code">body{background:}</textarea>
+    	        <textarea id="css-code" name="css-code" class="code">body{background:#000;color:#fff}</textarea>
     	    </div>
     	    
     	    <div id="js-div">
     	        <header class="tab-header">
     	            <h2 class="heading">JS</h2>
-    	            <button class="close-open-tab" onclick="run()">ok</button>
+    	            <button class="close-open-tab" onclick="">ok</button>
     	        </header>
-    	        <button id="RunJs" onclick="jsRun()">Run</button>
+    	        <button id="RunJs">Run</button>
     	        <textarea id="js-code" name="js-code" class="code"></textarea>
     	    </div>
     	</section>
