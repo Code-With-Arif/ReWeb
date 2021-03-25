@@ -1,1 +1,220 @@
-const _0x3c88=['1mWPaQt','getElementsByClassName','script-','body','#ea0','1159387jCqXub','display','</style>','length','write','https://yourdomain.com/style.css','#cssMenu','code','1153165rZAKpi','customScript-','script','setAttribute','#jsMenuNav','scriptDel-','js-div','10862IAgBHy','text','customStyleSheet','input','439986NXsKxr','\x27></script>','customStyleSheet-','background-color:#212121;border-radius:8px\x208px\x200px\x200px','contentDocument','result','</script>','none','#html-code','close','83vh','removeChild','prototype','7oeboIW','height','getElementById','querySelector','#js-code','remove','border-top:\x20none','#jsMenu','<link\x20rel=\x27stylesheet\x27\x20href=\x27','navJs','<style\x20type=\x27text/css\x27>','#cssMenuNav','scriptDel','<script>','#htmlMenu','document','toolsMenuBody','2qajAhf','stylesheet-','menuWindow','value','#web-result','color','<script\x20type=\x27Application/javascript\x27\x20src=\x27','customScriptsBody','contentWindow','appendChild','createElement','FullScreenView','innerText','navHtml','40vh','editor','css-div','navResult','button','https://yourdomain.com/script.js','#fff','block','border-top:\x202px\x20solid\x20#fff','div','#htmlMenuNav','68710LPJqyq','deleteThis(\x27','149kSlbZY','navCss','childNodes','html-div','innerHTML','html','515149haJEvO','customScript','#css-code','style','parentElement','border:none','add','customStyleSheetsBody','573107ifZMOo','81.5vh','head','css','stylesheetDel'];const _0x4efb=function(_0x189995,_0x1773ac){_0x189995=_0x189995-0x76;let _0x3c8887=_0x3c88[_0x189995];return _0x3c8887;};const _0x590486=_0x4efb;(function(_0x4f96c7,_0x4fc53a){const _0x5627ba=_0x4efb;while(!![]){try{const _0x1b86fd=parseInt(_0x5627ba(0xb2))+parseInt(_0x5627ba(0xbf))*parseInt(_0x5627ba(0x85))+parseInt(_0x5627ba(0x95))*parseInt(_0x5627ba(0x9a))+-parseInt(_0x5627ba(0x8d))*-parseInt(_0x5627ba(0xd0))+-parseInt(_0x5627ba(0xa7))+parseInt(_0x5627ba(0xae))*-parseInt(_0x5627ba(0x87))+parseInt(_0x5627ba(0x9f));if(_0x1b86fd===_0x4fc53a)break;else _0x4f96c7['push'](_0x4f96c7['shift']());}catch(_0xe63888){_0x4f96c7['push'](_0x4f96c7['shift']());}}}(_0x3c88,0xdeb11));const htmlTab=document[_0x590486(0xc2)](_0x590486(0xba)),cssTab=document[_0x590486(0xc2)](_0x590486(0x8f)),jsTab=document[_0x590486(0xc2)](_0x590486(0xc3)),resultTab=document['querySelector'](_0x590486(0xd4)),navHtml=document['getElementById'](_0x590486(0x79)),navCss=document[_0x590486(0xc1)](_0x590486(0x88)),navJs=document[_0x590486(0xc1)](_0x590486(0xc8)),navResult=document[_0x590486(0xc1)](_0x590486(0x7d));var curentTab=_0x590486(0x8c),resultTabActivate=!![],jsAutoRender=![],styleSheetInput=0x1,scriptInput=0x1,menuToolActive=![],fullScreenView=![];function setAttributes(_0xeb0975,_0x29484a){const _0x154cb6=_0x590486;for(var _0x1e8265 in _0x29484a){_0xeb0975[_0x154cb6(0xaa)](_0x1e8265,_0x29484a[_0x1e8265]);}}Element[_0x590486(0xbe)]['remove']=function(){const _0x3cce8b=_0x590486;this[_0x3cce8b(0x91)][_0x3cce8b(0xbd)](this);},NodeList['prototype'][_0x590486(0xc4)]=HTMLCollection['prototype']['remove']=function(){const _0x558217=_0x590486;for(var _0x22c116=this[_0x558217(0xa2)]-0x1;_0x22c116>=0x0;_0x22c116--){this[_0x22c116]&&this[_0x22c116][_0x558217(0x91)]&&this[_0x22c116][_0x558217(0x91)][_0x558217(0xbd)](this[_0x22c116]);}};function iframeHeadAdd(){const _0x5b52c3=_0x590486;var _0x512cdc;let _0x1f1b3a=document[_0x5b52c3(0x9b)](_0x5b52c3(0xb0)),_0x209aec=document[_0x5b52c3(0x9b)](_0x5b52c3(0x8e));for(let _0x3d8f83=0x0;_0x3d8f83<_0x1f1b3a['length'];_0x3d8f83++){_0x512cdc=_0x512cdc+_0x5b52c3(0xc7)+_0x1f1b3a[_0x3d8f83][_0x5b52c3(0x89)][0x1][_0x5b52c3(0xd3)]+'\x27>';}for(let _0x3d47f3=0x0;_0x3d47f3<_0x209aec[_0x5b52c3(0xa2)];_0x3d47f3++){_0x512cdc=_0x512cdc+_0x5b52c3(0xd6)+_0x209aec[_0x3d47f3]['childNodes'][0x1][_0x5b52c3(0xd3)]+_0x5b52c3(0xb3);}resultTab[_0x5b52c3(0xb6)][_0x5b52c3(0x97)]['innerHTML']=_0x512cdc;}function run(){const _0x3703aa=_0x590486;var _0x4ade09=htmlTab[_0x3703aa(0xd3)];let _0x5ae3eb=_0x3703aa(0xc9)+cssTab[_0x3703aa(0xd3)]+_0x3703aa(0xa1),_0x4b1bd3=_0x3703aa(0xcc)+jsTab[_0x3703aa(0xd3)]+'</script>';webCode=_0x5ae3eb+_0x4ade09,jsAutoRender===!![]&&(webCode=webCode+_0x4b1bd3),resultTab[_0x3703aa(0xb6)][_0x3703aa(0x9d)][_0x3703aa(0x8b)]=webCode,iframeHeadAdd();}function jsRun(){const _0x1452dd=_0x590486;var _0x4517ce=htmlTab['value'];let _0x8511c2=_0x1452dd(0xc9)+cssTab[_0x1452dd(0xd3)]+_0x1452dd(0xa1),_0x42e661=_0x1452dd(0xcc)+jsTab[_0x1452dd(0xd3)]+_0x1452dd(0xb8);webCode=_0x8511c2+_0x4517ce+_0x42e661,result=resultTab[_0x1452dd(0xd8)][_0x1452dd(0xce)],result['open'](),result[_0x1452dd(0xa3)](webCode),result[_0x1452dd(0xbb)]();}function HtmlTab(){const _0x1f7069=_0x590486;curentTab=_0x1f7069(0x8c),navHtml[_0x1f7069(0xaa)]('style',_0x1f7069(0x82)),navCss['setAttribute'](_0x1f7069(0x90),_0x1f7069(0x92)),navJs[_0x1f7069(0xaa)](_0x1f7069(0x90),_0x1f7069(0x92)),document[_0x1f7069(0xc1)](_0x1f7069(0x8a))[_0x1f7069(0x90)]['display']=_0x1f7069(0x81),document[_0x1f7069(0xc1)](_0x1f7069(0x7c))[_0x1f7069(0x90)]['display']='none',document[_0x1f7069(0xc1)](_0x1f7069(0xad))['style']['display']=_0x1f7069(0xb9);}function CssTab(){const _0x47e2d1=_0x590486;curentTab=_0x47e2d1(0x98),navHtml[_0x47e2d1(0xaa)]('style',_0x47e2d1(0x92)),navCss[_0x47e2d1(0xaa)]('style','border-top:\x202px\x20solid\x20#fff'),navJs[_0x47e2d1(0xaa)]('style',_0x47e2d1(0x92)),document[_0x47e2d1(0xc1)](_0x47e2d1(0x8a))[_0x47e2d1(0x90)][_0x47e2d1(0xa0)]=_0x47e2d1(0xb9),document[_0x47e2d1(0xc1)](_0x47e2d1(0x7c))[_0x47e2d1(0x90)][_0x47e2d1(0xa0)]=_0x47e2d1(0x81),document['getElementById']('js-div')['style']['display']=_0x47e2d1(0xb9);}function JsTab(){const _0x57a3c2=_0x590486;curentTab='js',navHtml['setAttribute']('style','border:none'),navCss[_0x57a3c2(0xaa)](_0x57a3c2(0x90),'border:none'),navJs[_0x57a3c2(0xaa)](_0x57a3c2(0x90),'border-top:\x202px\x20solid\x20#fff'),document[_0x57a3c2(0xc1)](_0x57a3c2(0x8a))[_0x57a3c2(0x90)][_0x57a3c2(0xa0)]=_0x57a3c2(0xb9),document['getElementById'](_0x57a3c2(0x7c))['style'][_0x57a3c2(0xa0)]='none',document[_0x57a3c2(0xc1)](_0x57a3c2(0xad))[_0x57a3c2(0x90)][_0x57a3c2(0xa0)]=_0x57a3c2(0x81);}function ResultTab(){const _0x2403f5=_0x590486;resultTabActivate===!![]?(resultTabActivate=![],navResult['setAttribute'](_0x2403f5(0x90),_0x2403f5(0xc5)),document['getElementById'](_0x2403f5(0xb7))[_0x2403f5(0x90)][_0x2403f5(0xa0)]=_0x2403f5(0xb9),document[_0x2403f5(0xc1)](_0x2403f5(0x7b))[_0x2403f5(0x90)][_0x2403f5(0xc0)]=_0x2403f5(0xbc),document['getElementsByClassName'](_0x2403f5(0xa6))[0x0][_0x2403f5(0x90)][_0x2403f5(0xc0)]=_0x2403f5(0xbc),document['getElementsByClassName'](_0x2403f5(0xa6))[0x1][_0x2403f5(0x90)]['height']='83vh',document[_0x2403f5(0x9b)](_0x2403f5(0xa6))[0x2][_0x2403f5(0x90)][_0x2403f5(0xc0)]=_0x2403f5(0xbc)):(resultTabActivate=!![],navResult[_0x2403f5(0xaa)](_0x2403f5(0x90),'border-top:\x202px\x20solid\x20#fff'),document[_0x2403f5(0xc1)]('result')[_0x2403f5(0x90)][_0x2403f5(0xa0)]=_0x2403f5(0x81),document[_0x2403f5(0xc1)](_0x2403f5(0x7b))[_0x2403f5(0x90)][_0x2403f5(0xc0)]=_0x2403f5(0x7a),document[_0x2403f5(0x9b)](_0x2403f5(0xa6))[0x0][_0x2403f5(0x90)]['height']=_0x2403f5(0x7a),document[_0x2403f5(0x9b)](_0x2403f5(0xa6))[0x1][_0x2403f5(0x90)][_0x2403f5(0xc0)]=_0x2403f5(0x7a),document[_0x2403f5(0x9b)](_0x2403f5(0xa6))[0x2][_0x2403f5(0x90)][_0x2403f5(0xc0)]=_0x2403f5(0x7a));}function openMenuWindow(){const _0xb531f5=_0x590486;document[_0xb531f5(0xc1)]('menuWindow')[_0xb531f5(0x90)][_0xb531f5(0xa0)]=_0xb531f5(0x81);}function closeMenuWindow(){const _0x5ee892=_0x590486;document['getElementById'](_0x5ee892(0xd2))[_0x5ee892(0x90)]['display']='none';}function HtmlMenuTab(){const _0x2a9bf9=_0x590486;document[_0x2a9bf9(0xc2)](_0x2a9bf9(0xcd))['style'][_0x2a9bf9(0xa0)]=_0x2a9bf9(0x81),document[_0x2a9bf9(0xc2)](_0x2a9bf9(0xa5))[_0x2a9bf9(0x90)][_0x2a9bf9(0xa0)]=_0x2a9bf9(0xb9),document['querySelector'](_0x2a9bf9(0xc6))[_0x2a9bf9(0x90)][_0x2a9bf9(0xa0)]='none',document[_0x2a9bf9(0xc2)]('#htmlMenuNav')[_0x2a9bf9(0xaa)](_0x2a9bf9(0x90),_0x2a9bf9(0x82)),document[_0x2a9bf9(0xc2)]('#cssMenuNav')[_0x2a9bf9(0xaa)](_0x2a9bf9(0x90),_0x2a9bf9(0x92)),document[_0x2a9bf9(0xc2)](_0x2a9bf9(0xab))['setAttribute'](_0x2a9bf9(0x90),_0x2a9bf9(0x92));}function CssMenuTab(){const _0xed3487=_0x590486;document[_0xed3487(0xc2)](_0xed3487(0xcd))[_0xed3487(0x90)]['display']=_0xed3487(0xb9),document[_0xed3487(0xc2)](_0xed3487(0xa5))['style'][_0xed3487(0xa0)]=_0xed3487(0x81),document[_0xed3487(0xc2)](_0xed3487(0xc6))['style'][_0xed3487(0xa0)]=_0xed3487(0xb9),document[_0xed3487(0xc2)](_0xed3487(0x84))['setAttribute']('style',_0xed3487(0x92)),document['querySelector'](_0xed3487(0xca))[_0xed3487(0xaa)](_0xed3487(0x90),'border-top:\x202px\x20solid\x20#fff'),document[_0xed3487(0xc2)](_0xed3487(0xab))[_0xed3487(0xaa)]('style','border:none');}function JsMenuTab(){const _0x470dee=_0x590486;document[_0x470dee(0xc2)](_0x470dee(0xcd))[_0x470dee(0x90)][_0x470dee(0xa0)]=_0x470dee(0xb9),document[_0x470dee(0xc2)]('#cssMenu')['style']['display']='none',document[_0x470dee(0xc2)]('#jsMenu')[_0x470dee(0x90)][_0x470dee(0xa0)]=_0x470dee(0x81),document[_0x470dee(0xc2)](_0x470dee(0x84))['setAttribute'](_0x470dee(0x90),_0x470dee(0x92)),document[_0x470dee(0xc2)]('#cssMenuNav')[_0x470dee(0xaa)](_0x470dee(0x90),_0x470dee(0x92)),document[_0x470dee(0xc2)]('#jsMenuNav')['setAttribute'](_0x470dee(0x90),_0x470dee(0x82));}function addNewStyleSheet(){const _0xb623ae=_0x590486;let _0x2ad596=document[_0xb623ae(0x76)](_0xb623ae(0x83));_0x2ad596['classList'][_0xb623ae(0x93)]('customStyleSheet'),_0x2ad596['setAttribute']('id',_0xb623ae(0xb4)+(styleSheetInput+0x1));let _0x544a83=document[_0xb623ae(0x76)](_0xb623ae(0xb1));setAttributes(_0x544a83,{'type':_0xb623ae(0xaf),'name':_0xb623ae(0xd1)+(styleSheetInput+0x1),'class':'stylesheet','id':'stylesheet-'+(styleSheetInput+0x1),'placeholder':_0xb623ae(0xa4)});let _0x409ca4=document['createElement'](_0xb623ae(0x7e));setAttributes(_0x409ca4,{'class':_0xb623ae(0x99),'id':'stylesheetDel-'+(styleSheetInput+0x1),'onclick':_0xb623ae(0x86)+_0xb623ae(0xb4)+(styleSheetInput+0x1)+'\x27)'}),_0x409ca4[_0xb623ae(0x78)]='×',_0x2ad596[_0xb623ae(0xd9)](_0x544a83),_0x2ad596[_0xb623ae(0xd9)](_0x409ca4),document[_0xb623ae(0xc1)](_0xb623ae(0x94))[_0xb623ae(0xd9)](_0x2ad596),styleSheetInput=styleSheetInput+0x1;}function addNewScript(){const _0x7baf23=_0x590486;let _0x4cbefa=document['createElement'](_0x7baf23(0x83));_0x4cbefa['classList'][_0x7baf23(0x93)](_0x7baf23(0x8e)),_0x4cbefa[_0x7baf23(0xaa)]('id',_0x7baf23(0xa8)+(scriptInput+0x1));let _0x17638a=document[_0x7baf23(0x76)](_0x7baf23(0xb1));setAttributes(_0x17638a,{'type':_0x7baf23(0xaf),'name':'script-'+(scriptInput+0x1),'class':_0x7baf23(0xa9),'id':_0x7baf23(0x9c)+(scriptInput+0x1),'placeholder':_0x7baf23(0x7f)});let _0x2f1fef=document[_0x7baf23(0x76)](_0x7baf23(0x7e));setAttributes(_0x2f1fef,{'class':_0x7baf23(0xcb),'id':_0x7baf23(0xac)+(scriptInput+0x1),'onclick':'deleteThis(\x27'+_0x7baf23(0xa8)+(scriptInput+0x1)+'\x27)'}),_0x2f1fef[_0x7baf23(0x78)]='×',_0x4cbefa[_0x7baf23(0xd9)](_0x17638a),_0x4cbefa[_0x7baf23(0xd9)](_0x2f1fef),document['getElementById'](_0x7baf23(0xd7))[_0x7baf23(0xd9)](_0x4cbefa),scriptInput=scriptInput+0x1;}function deleteThis(_0x596cc4){const _0x41b17a=_0x590486;let _0xf0431=document[_0x41b17a(0xc1)](_0x596cc4)[_0x41b17a(0xc4)]();iframeHeadAdd();}function menuTools(){const _0x457bd3=_0x590486;menuToolActive===![]?(menuToolActive=!![],document[_0x457bd3(0xc1)](_0x457bd3(0xcf))['style'][_0x457bd3(0xa0)]=_0x457bd3(0x81),document['getElementById']('menuTools')[_0x457bd3(0xaa)](_0x457bd3(0x90),_0x457bd3(0xb5))):(menuToolActive=![],document['getElementById'](_0x457bd3(0xcf))['style'][_0x457bd3(0xa0)]=_0x457bd3(0xb9),document['getElementById']('menuTools')['setAttribute'](_0x457bd3(0x90),''));}function FullScreenView(){const _0x38e7f8=_0x590486;fullScreenView===![]?(fullScreenView=!![],document['getElementById'](_0x38e7f8(0x7b))[_0x38e7f8(0x90)][_0x38e7f8(0xa0)]=_0x38e7f8(0xb9),document['getElementById'](_0x38e7f8(0xb7))[_0x38e7f8(0x90)][_0x38e7f8(0xc0)]=_0x38e7f8(0x96),document['getElementById'](_0x38e7f8(0x77))[_0x38e7f8(0x90)][_0x38e7f8(0xd5)]=_0x38e7f8(0x9e)):(fullScreenView=![],document['getElementById'](_0x38e7f8(0x7b))[_0x38e7f8(0x90)][_0x38e7f8(0xa0)]=_0x38e7f8(0x81),document[_0x38e7f8(0xc1)](_0x38e7f8(0xb7))[_0x38e7f8(0x90)]['height']='41.5vh',document[_0x38e7f8(0xc1)]('FullScreenView')[_0x38e7f8(0x90)][_0x38e7f8(0xd5)]=_0x38e7f8(0x80));}
+
+const resultTab = document.querySelector("#web-result");
+
+const navHtml = document.getElementById("navHtml")
+const navCss = document.getElementById("navCss")
+const navJs = document.getElementById("navJs")
+const navResult = document.getElementById("navResult")
+
+var curentTab="html",
+    resultTabActivate=true,
+    jsAutoRender=true,
+    styleSheetInput = 1,
+    scriptInput = 1,
+    menuToolActive = false,
+    fullScreenView = false;
+
+// setAttributes function
+function setAttributes(el, attrs) {for(var key in attrs) {el.setAttribute(key, attrs[key]);}}
+Element.prototype.remove = function() {this.parentElement.removeChild(this);}
+NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {for(var i = this.length - 1; i >= 0; i--) {if(this[i] && this[i].parentElement) {this[i].parentElement.removeChild(this[i]);}}}
+
+// add elements to the head tag
+function iframeHeadAdd(){
+    var iframeHead = document.getElementById("HtmlHead").value;
+    let styleSheet = document.getElementsByClassName("customStyleSheet");
+    let script = document.getElementsByClassName("customScript");
+    consoleFrame = "<script src='js/console.js'></script><script>eruda.init({tool: ['console']});</script>";
+    let cssCode = "<style type='text/css'>"+cssTab.getValue()+"</style>";
+    iframeHead=iframeHead+cssCode+consoleFrame;
+    for(let i=0;i<styleSheet.length;i++){
+        iframeHead = iframeHead+"<link rel='stylesheet' href='"+ styleSheet[i].childNodes[1].value +"'>";
+    }
+    for(let i=0;i<script.length;i++){
+        iframeHead = iframeHead+"<script type='text/javascript' src='"+ script[i].childNodes[1].value +"'></script>";
+    }
+    resultTab.contentDocument.head.innerHTML = iframeHead;
+}
+// run app
+function run(){
+    var htmlCode = htmlTab.getValue();
+    let jsCode = "<scri"+"pt>"+jsTab.getValue()+"</scri"+"pt>";
+    webCode = htmlCode;
+    if(jsAutoRender===true){webCode=webCode+jsCode}
+    result = resultTab.contentWindow.document;
+    result.open();
+    result.write(webCode);
+    result.close();
+    iframeHeadAdd();
+}
+// run javascript
+function jsRun(){
+    var htmlCode = htmlTab.getValue();
+    let jsCode = "<scri"+"pt>"+jsTab.getValue()+"</scri"+"pt>";
+    webCode = htmlCode+jsCode;
+    result = resultTab.contentWindow.document;
+    result.open();
+    result.write(webCode);
+    result.close();
+    iframeHeadAdd();
+}
+// Change working Tab;
+function HtmlTab(){
+    curentTab = "html";
+    navHtml.setAttribute("style","border-top: 2px solid #fff");
+    navCss.setAttribute("style","border:none");
+    navJs.setAttribute("style","border:none");
+    document.getElementById("html-div").style.display = "block";
+    document.getElementById("css-div").style.display = "none";
+    document.getElementById("js-div").style.display = "none";
+}
+function CssTab(){
+    curentTab = "css";
+    navHtml.setAttribute("style","border:none");
+    navCss.setAttribute("style","border-top: 2px solid #fff");
+    navJs.setAttribute("style","border:none");
+    document.getElementById("html-div").style.display = "none";
+    document.getElementById("css-div").style.display = "block";
+    document.getElementById("js-div").style.display = "none";
+}
+function JsTab(){
+    curentTab = "js";
+    navHtml.setAttribute("style","border:none");
+    navCss.setAttribute("style","border:none");
+    navJs.setAttribute("style","border-top: 2px solid #fff");
+    document.getElementById("html-div").style.display = "none";
+    document.getElementById("css-div").style.display = "none";
+    document.getElementById("js-div").style.display = "block";
+}
+function ResultTab(){
+    if(resultTabActivate === true){
+        resultTabActivate = false;
+        navResult.setAttribute("style","border-top: none");
+        document.getElementById("result").style.display = "none";
+        document.getElementById("editor").style.height = "83vh";
+        document.getElementsByClassName("code")[0].style.height = "83vh";
+        document.getElementsByClassName("code")[1].style.height = "83vh";
+        document.getElementsByClassName("code")[2].style.height = "83vh";
+        document.getElementById("EditorView").style.color = "#fff";
+        
+    }else{
+        resultTabActivate = true;
+        navResult.setAttribute("style","border-top: 2px solid #fff");
+        document.getElementById("result").style.display = "block";
+        document.getElementById("editor").style.height = "40vh";
+        document.getElementsByClassName("code")[0].style.height = "40vh";
+        document.getElementsByClassName("code")[1].style.height = "40vh";
+        document.getElementsByClassName("code")[2].style.height = "40vh";
+        document.getElementById("EditorView").style.color = "#ea0";
+    }
+}
+function openMenuWindow(){
+    document.getElementById("menuWindow").style.display = "block";
+}
+function closeMenuWindow(){
+    document.getElementById("menuWindow").style.display = "none";
+}
+function HtmlMenuTab(){
+    document.querySelector("#htmlMenu").style.display="block";
+    document.querySelector("#cssMenu").style.display="none";
+    document.querySelector("#jsMenu").style.display="none";
+    
+    document.querySelector("#htmlMenuNav").setAttribute("style","border-top: 2px solid #fff");
+    document.querySelector("#cssMenuNav").setAttribute("style","border:none");
+    document.querySelector("#jsMenuNav").setAttribute("style","border:none");
+}
+function CssMenuTab(){
+    document.querySelector("#htmlMenu").style.display="none";
+    document.querySelector("#cssMenu").style.display="block";
+    document.querySelector("#jsMenu").style.display="none";
+    
+    document.querySelector("#htmlMenuNav").setAttribute("style","border:none");
+    document.querySelector("#cssMenuNav").setAttribute("style","border-top: 2px solid #fff");
+    document.querySelector("#jsMenuNav").setAttribute("style","border:none");
+}
+function JsMenuTab(){
+    document.querySelector("#htmlMenu").style.display="none";
+    document.querySelector("#cssMenu").style.display="none";
+    document.querySelector("#jsMenu").style.display="block";
+    
+    document.querySelector("#htmlMenuNav").setAttribute("style","border:none");
+    document.querySelector("#cssMenuNav").setAttribute("style","border:none");
+    document.querySelector("#jsMenuNav").setAttribute("style","border-top: 2px solid #fff");
+}
+function addNewStyleSheet(){
+    let div = document.createElement("div");
+    div.classList.add("customStyleSheet");
+    div.setAttribute("id","customStyleSheet-"+(styleSheetInput+1));
+    let input = document.createElement("input");
+    setAttributes(input,{
+        "type":"text",
+        "name":"stylesheet-"+(styleSheetInput+1),
+        "class":"stylesheet",
+        "id":"stylesheet-"+(styleSheetInput+1),
+        "placeholder":"https://yourdomain.com/style.css"
+    });
+    let btn = document.createElement("button");
+    setAttributes(btn,{
+        "class":"stylesheetDel",
+        "id":"stylesheetDel-"+(styleSheetInput+1),
+        "onclick":"deleteThis('"+'customStyleSheet-'+(styleSheetInput+1)+"')"
+    });
+    btn.innerText = "×";
+    div.appendChild(input);
+    div.appendChild(btn);
+    document.getElementById("customStyleSheetsBody").appendChild(div);
+    styleSheetInput = styleSheetInput+1;
+}
+function addNewScript(){
+    let div = document.createElement("div");
+    div.classList.add("customScript");
+    div.setAttribute("id","customScript-"+(scriptInput+1));
+    let input = document.createElement("input");
+    setAttributes(input,{
+        "type":"text",
+        "name":"script-"+(scriptInput+1),
+        "class":"script",
+        "id":"script-"+(scriptInput+1),
+        "placeholder":"https://yourdomain.com/script.js"
+    });
+    let btn = document.createElement("button");
+    setAttributes(btn,{
+        "class":"scriptDel",
+        "id":"scriptDel-"+(scriptInput+1),
+        "onclick":"deleteThis('"+'customScript-'+(scriptInput+1)+"')"
+    });
+    btn.innerText = "×";
+    div.appendChild(input);
+    div.appendChild(btn);
+    document.getElementById("customScriptsBody").appendChild(div);
+    scriptInput = scriptInput+1;
+}
+function deleteThis(id){
+    let a = document.getElementById(id).remove();
+    iframeHeadAdd();
+}
+function menuTools(){
+    if(menuToolActive === false){
+        menuToolActive = true;
+        document.getElementById("toolsMenuBody").style.display = "block";
+        document.getElementById("menuTools").setAttribute("style","background-color:#212121;border-radius:8px 8px 0px 0px");
+    }else{
+        menuToolActive = false;
+        document.getElementById("toolsMenuBody").style.display = "none";
+        document.getElementById("menuTools").setAttribute("style","");
+    }
+}
+function FullScreenView(){
+    if(fullScreenView === false){
+        fullScreenView = true;
+        document.getElementById("editor").style.display = "none";
+        document.getElementById("result").style.display = "block";
+        document.getElementById("result").style.height = "81.5vh";
+        document.getElementById("FullScreenView").style.color = "#ea0";
+    }else{
+        fullScreenView = false;
+        document.getElementById("editor").style.display = "block";
+        document.getElementById("result").style.height = "41.5vh";
+        document.getElementById("FullScreenView").style.color = "#fff";
+    }
+}

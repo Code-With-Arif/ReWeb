@@ -1,0 +1,10 @@
+#ace_settingsmenu{
+    background-color: #000;
+}
+.ace_mobile-button{
+    visibility: hidden;
+    display: none;
+}
+.ace_doc-tooltip{
+    visibility: hidden;
+}

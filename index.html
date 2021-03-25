@@ -2,11 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="description" content="ReWeb-Creat your own WebTin and enjoy creating webpages on the web!!!" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-  <link rel="shortcut icon" href="./media/img/logo.png" type="image/x-icon" />
-  <link rel="stylesheet" media="screen and (max-width:600px)" href="css/index.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="//cdn.jsdelivr.net/npm/eruda"></script><script>eruda.init();</script>
   <title>ReWeb-SPILAB</title>
+  <link rel="shortcut icon" href="./media/img/logo.png" type="image/x-icon" />
+  
+  <link rel="stylesheet" media="screen and (max-width:600px)" href="css/index.css">
+  <link rel="stylesheet" media="screen and (max-width:600px)" href="css/ace.css">
+  
+  <script src="/js/ace/ace.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/js/ace/ext-language_tools.js" type="text/javascript" charset="utf-8"></script>
+  
 </head>
 <body>
     <header id="mainHeader">
@@ -28,13 +35,18 @@
         <div class="overlay" id="closeMenuWindowDiv"></div>
         <div id="menuBody">
             <header id="menuNav">
-                <h3 id="menuNavHeading">Code Settings</h3>
+                <h3 id="menuNavHeading">WebTin Settings</h3>
                 <button class="button" id="htmlMenuNav" style="border-top: 2px solid #fff">HTML</button>
                 <button class="button" id="cssMenuNav">CSS</button>
                 <button class="button" id="jsMenuNav">JS</button>
             </header>
             <div id="htmlMenu">
-                <h4>* Comming Soon...</h4>
+                <div id="htmlMenuHeadTag">
+                    <h4>Edit Html Head Tag:</h4>
+                    <br/>
+                    <p style="font-size:12px">* Don't Use "&lthead&gt...&lt/head&gt" tag. Only write the code inside.</p>
+                    <textarea class="codeHtmlHead" name="HtmlHead" id="HtmlHead" placeholder="<head> ... </head>"><title>Re-Web</title></textarea>
+                </div>
             </div>
             <div id="cssMenu">
                 <div id="customStyleSheets">
@@ -75,7 +87,7 @@
                 <hr class="hr"/>
                 <ul id="WebTinView">
                     <h3>View This WebTin in:</h3>
-                    <li><div class="menuToolsButtons" id="">Editor View</div></li>
+                    <li><div class="menuToolsButtons" id="EditorView" style="color:ea0">Editor View</div></li>
                     <li><div class="menuToolsButtons" id="">Details View</div></li>
                     <li><div class="menuToolsButtons" id="FullScreenView">Full Screen View</div></li>
                     <li><div class="menuToolsButtons" id="">Debug View</div></li>
@@ -93,7 +105,10 @@
     	            <h2 class="heading">HTML</h2>
     	            <button class="close-open-tab" onclick="">ok</button>
     	        </header>
-    	        <textarea id="html-code" name="html-code" class="code"><h1>Hello</h1></textarea>
+    	        <div id="html-code" name="html-code" class="code">
+&lt;h1 id="Txt"&gt;Hello World!!!&lt;/h1&gt;
+&lt;button id="btn">Hit Me&lt;/button&gt;
+    	        </div>
     	    </div>
     	    
     	    <div id="css-div">
@@ -101,7 +116,7 @@
     	            <h2 class="heading">CSS</h2>
     	            <button class="close-open-tab" onclick="">ok</button>
     	        </header>
-    	        <textarea id="css-code" name="css-code" class="code">body{background:#000;color:#fff}</textarea>
+    	        <div id="css-code" name="css-code" class="code">body{background:#000;color:#fff;text-align:center;}button{background:#000;color:#fff;border:1px solid #fff;border-radius:8px;padding:8px 20px;font-size:20px;outline:none;}</div>
     	    </div>
     	    
     	    <div id="js-div">
@@ -110,7 +125,7 @@
     	            <button class="close-open-tab" onclick="">ok</button>
     	        </header>
     	        <button id="RunJs">Run</button>
-    	        <textarea id="js-code" name="js-code" class="code"></textarea>
+    	        <div id="js-code" name="js-code" class="code">document.getElementById("btn").addEventListener("click",e =>{document.getElementById("Txt").innerText = "Hello ReWeb";});</div>
     	    </div>
     	</section>
 	
@@ -128,16 +143,8 @@
 	        <button class="button" id="consoleBar" onclick="">Console</button>
 	    </div>-->
 	</footer>
-	<!--<div class="output"></div>
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script language="javascript">
-        var realConsoleLog = console.error;
-        console.log = function () {
-            var message = [].join.call(arguments, " ");
-            $(".output").text(message);
-            realConsoleLog.apply(console, arguments);
-        };
-    </script>-->
+	
+	
 	
     <script src="js/function.js"></script>
     <script src="js/logic.js"></script>
