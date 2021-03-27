@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="description" content="ReWeb-Creat your own WebTin and enjoy creating webpages on the web!!!" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-  <script src="//cdn.jsdelivr.net/npm/eruda"></script><script>eruda.init();</script>
   <title>ReWeb-SPILAB</title>
   <link rel="shortcut icon" href="./media/img/logo.png" type="image/x-icon" />
   
@@ -18,7 +17,7 @@
 <body>
     <header id="mainHeader">
         <div id="logoDiv">
-            <h2  style="display:inline-block;padding:10px">ReWeb -</h2><h3 style="display:inline-block">Arif-2005</h3>
+            <h2  style="display:inline-block;text-align:left;padding:10px">ReWeb -</h2><h3 style="display:inline-block">tryal mode</h3>
         </div>
         <div id="Nav">
             <button class="button" id="menuSettings"><img src="./media/svg/settings_light.svg" alt="settings" /></button>
@@ -39,13 +38,14 @@
                 <button class="button" id="htmlMenuNav" style="border-top: 2px solid #fff">HTML</button>
                 <button class="button" id="cssMenuNav">CSS</button>
                 <button class="button" id="jsMenuNav">JS</button>
+                <button class="button" id="resultMenuNav">Result</button>
             </header>
             <div id="htmlMenu">
                 <div id="htmlMenuHeadTag">
                     <h4>Edit Html Head Tag:</h4>
                     <br/>
                     <p style="font-size:12px">* Don't Use "&lthead&gt...&lt/head&gt" tag. Only write the code inside.</p>
-                    <textarea class="codeHtmlHead" name="HtmlHead" id="HtmlHead" placeholder="<head> ... </head>"><title>Re-Web</title></textarea>
+                    <div class="codeHtmlHead" name="HtmlHead" id="HtmlHead" placeholder="<head> ... </head>">    &lt;title&gt;Re-Web&lt;/title&gt;&lt;meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1"&gt;</div>
                 </div>
             </div>
             <div id="cssMenu">
@@ -73,6 +73,15 @@
                     <button class="button" id="addScript">Done</button>
                     <button class="button" id="addNewScript">add new</button>
                 </div>
+            </div>
+            <div id="resultMenu">
+                <h1>Result</h1>
+                <h3 id="setZoomResult">Set Result Zoom:</h3>
+                <select name="setZoom" id="setResultZoom">
+                    <option value="1.0">1.0x</option>
+                    <option value="0.50">0.50x</option>
+                    <option value="0.25">0.25x</option>
+                </select>
             </div>
         </div>
     </section>
@@ -129,19 +138,18 @@
     	    </div>
     	</section>
 	
-	    <section id="result">
-	        <iframe id="web-result" frameborder="0"></iframe>
-	    </section>
+    	<section id="result">
+    	    <div id="wrap">
+        	        <iframe id="web-result" frameborder="0"></iframe>
+    	    </div>
+    	</section>
 	
     </section>
 	
 	
 	
 	<footer id="footer">
-	    <button class="button" id="tools" onclick=""><img src="./media/svg/up_arrow_light.svg" alt="Tools" /></button>
-	    <!--<div id="toolsBar">
-	        <button class="button" id="consoleBar" onclick="">Console</button>
-	    </div>-->
+	    <h3>Powred By The SPI LAB</h3>
 	</footer>
 	
 	
