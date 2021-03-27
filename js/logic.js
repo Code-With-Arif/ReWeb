@@ -1,1 +1,106 @@
-const _0x8309=['593001tjRFZy','navCss','click','557060XvfdMk','31541uiqxxG','ace/theme/idle_fingers','js-code','setTabSize','addStyleSheet','getElementById','addNewScript','html-code','change','4063466raMvEj','closeMenuWindowDiv','css-code','setShowGutter','ace/mode/javascript','55YBHkcX','navResult','jsMenuNav','setUseWrapMode','session','setTheme','ace/mode/html','ace/mode/css','FullScreenView','setMode','cssMenuNav','resultMenuNav','EditorView','navHtml','727494vBfovs','edit','531212maqBdm','htmlMenuNav','setShowPrintMargin','addEventListener','overlay-2','getSession','1200437IAAuET','toolsSettings','setHighlightActiveLine','addNewStyleSheet','setShowInvisibles','setReadOnly','navJs','setOptions','addScript'];const _0x164d=function(_0x293176,_0x4010dc){_0x293176=_0x293176-0x12a;let _0x830941=_0x8309[_0x293176];return _0x830941;};const _0x5c6cc3=_0x164d;(function(_0xc32a14,_0x7b1d84){const _0x5addf8=_0x164d;while(!![]){try{const _0x4f0898=-parseInt(_0x5addf8(0x14a))+-parseInt(_0x5addf8(0x12a))+-parseInt(_0x5addf8(0x152))+parseInt(_0x5addf8(0x14c))+parseInt(_0x5addf8(0x12d))+-parseInt(_0x5addf8(0x13c))*parseInt(_0x5addf8(0x12e))+parseInt(_0x5addf8(0x137));if(_0x4f0898===_0x7b1d84)break;else _0xc32a14['push'](_0xc32a14['shift']());}catch(_0xbc62b6){_0xc32a14['push'](_0xc32a14['shift']());}}}(_0x8309,0xdac33));const htmlTab=ace[_0x5c6cc3(0x14b)](_0x5c6cc3(0x135)),cssTab=ace['edit'](_0x5c6cc3(0x139)),jsTab=ace[_0x5c6cc3(0x14b)](_0x5c6cc3(0x130)),HtmlHead=ace['edit']('HtmlHead');htmlTab[_0x5c6cc3(0x151)]()[_0x5c6cc3(0x145)](_0x5c6cc3(0x142)),htmlTab[_0x5c6cc3(0x141)]('ace/theme/idle_fingers'),htmlTab[_0x5c6cc3(0x140)]['setTabSize'](0x4),htmlTab['session'][_0x5c6cc3(0x13f)](![]),htmlTab['setShowPrintMargin'](![]),htmlTab[_0x5c6cc3(0x154)](!![]),htmlTab[_0x5c6cc3(0x156)](!![]),htmlTab[_0x5c6cc3(0x157)](![]),htmlTab[_0x5c6cc3(0x159)]({'enableBasicAutocompletion':!![],'enableSnippets':!![],'enableLiveAutocompletion':!![],'tooltipFollowsMouse':![]}),cssTab['getSession']()['setMode'](_0x5c6cc3(0x143)),cssTab[_0x5c6cc3(0x141)](_0x5c6cc3(0x12f)),cssTab['session'][_0x5c6cc3(0x131)](0x4),cssTab[_0x5c6cc3(0x140)][_0x5c6cc3(0x13f)](![]),cssTab[_0x5c6cc3(0x14e)](![]),cssTab[_0x5c6cc3(0x154)](!![]),cssTab[_0x5c6cc3(0x156)](!![]),cssTab[_0x5c6cc3(0x157)](![]),cssTab[_0x5c6cc3(0x159)]({'enableBasicAutocompletion':!![],'enableSnippets':!![],'enableLiveAutocompletion':!![],'tooltipFollowsMouse':![]}),jsTab[_0x5c6cc3(0x151)]()[_0x5c6cc3(0x145)](_0x5c6cc3(0x13b)),jsTab[_0x5c6cc3(0x141)](_0x5c6cc3(0x12f)),jsTab['session'][_0x5c6cc3(0x131)](0x4),jsTab[_0x5c6cc3(0x140)][_0x5c6cc3(0x13f)](![]),jsTab[_0x5c6cc3(0x14e)](![]),jsTab[_0x5c6cc3(0x154)](!![]),jsTab[_0x5c6cc3(0x156)](!![]),jsTab[_0x5c6cc3(0x157)](![]),jsTab[_0x5c6cc3(0x159)]({'enableBasicAutocompletion':!![],'enableSnippets':!![],'enableLiveAutocompletion':!![],'tooltipFollowsMouse':![]}),HtmlHead[_0x5c6cc3(0x151)]()[_0x5c6cc3(0x145)]('ace/mode/html'),HtmlHead[_0x5c6cc3(0x141)](_0x5c6cc3(0x12f)),HtmlHead[_0x5c6cc3(0x140)][_0x5c6cc3(0x131)](0x4),HtmlHead[_0x5c6cc3(0x140)]['setUseWrapMode'](![]),HtmlHead[_0x5c6cc3(0x14e)](![]),HtmlHead[_0x5c6cc3(0x154)](!![]),HtmlHead[_0x5c6cc3(0x156)](!![]),HtmlHead['renderer'][_0x5c6cc3(0x13a)](![]),HtmlHead[_0x5c6cc3(0x157)](![]),HtmlHead[_0x5c6cc3(0x159)]({'enableBasicAutocompletion':![],'enableSnippets':![],'enableLiveAutocompletion':![],'tooltipFollowsMouse':![]}),htmlTab['session']['on'](_0x5c6cc3(0x136),function(_0x40866c){run();}),cssTab['session']['on']('change',function(_0x20a580){run();}),jsTab[_0x5c6cc3(0x140)]['on'](_0x5c6cc3(0x136),function(_0x5032bc){run();}),HtmlHead[_0x5c6cc3(0x140)]['on'](_0x5c6cc3(0x136),function(_0x19692e){run();}),document[_0x5c6cc3(0x133)]('menuSettings')[_0x5c6cc3(0x14f)]('click',function(){openMenuWindow();}),document[_0x5c6cc3(0x133)](_0x5c6cc3(0x149))[_0x5c6cc3(0x14f)](_0x5c6cc3(0x12c),function(){HtmlTab();}),document[_0x5c6cc3(0x133)](_0x5c6cc3(0x12b))['addEventListener']('click',function(){CssTab();}),document[_0x5c6cc3(0x133)](_0x5c6cc3(0x158))[_0x5c6cc3(0x14f)]('click',function(){JsTab();}),document[_0x5c6cc3(0x133)](_0x5c6cc3(0x13d))[_0x5c6cc3(0x14f)]('click',function(){ResultTab();}),document[_0x5c6cc3(0x133)]('menuTools')['addEventListener']('click',function(){menuTools();}),document['getElementById']('closeMenuWindow')[_0x5c6cc3(0x14f)](_0x5c6cc3(0x12c),function(){closeMenuWindow();}),document['getElementById'](_0x5c6cc3(0x138))[_0x5c6cc3(0x14f)]('click',function(){closeMenuWindow();}),document[_0x5c6cc3(0x133)](_0x5c6cc3(0x14d))[_0x5c6cc3(0x14f)](_0x5c6cc3(0x12c),function(){HtmlMenuTab();}),document[_0x5c6cc3(0x133)](_0x5c6cc3(0x146))[_0x5c6cc3(0x14f)](_0x5c6cc3(0x12c),function(){CssMenuTab();}),document[_0x5c6cc3(0x133)](_0x5c6cc3(0x13e))['addEventListener']('click',function(){JsMenuTab();}),document[_0x5c6cc3(0x133)](_0x5c6cc3(0x147))[_0x5c6cc3(0x14f)](_0x5c6cc3(0x12c),function(){ResultMenuTab();}),document[_0x5c6cc3(0x133)](_0x5c6cc3(0x132))['addEventListener'](_0x5c6cc3(0x12c),function(){iframeHeadAdd();}),document[_0x5c6cc3(0x133)](_0x5c6cc3(0x155))['addEventListener'](_0x5c6cc3(0x12c),function(){addNewStyleSheet();}),document['getElementById'](_0x5c6cc3(0x15a))[_0x5c6cc3(0x14f)](_0x5c6cc3(0x12c),function(){iframeHeadAdd();}),document['getElementById'](_0x5c6cc3(0x134))[_0x5c6cc3(0x14f)](_0x5c6cc3(0x12c),function(){addNewScript();}),document[_0x5c6cc3(0x133)]('RunJs')['addEventListener'](_0x5c6cc3(0x12c),function(){jsRun();}),document[_0x5c6cc3(0x133)](_0x5c6cc3(0x150))[_0x5c6cc3(0x14f)]('click',function(){menuTools();}),document[_0x5c6cc3(0x133)](_0x5c6cc3(0x153))[_0x5c6cc3(0x14f)](_0x5c6cc3(0x12c),function(){openMenuWindow(),menuTools();}),document[_0x5c6cc3(0x133)](_0x5c6cc3(0x144))['addEventListener'](_0x5c6cc3(0x12c),function(){FullScreenView(),menuTools();}),document[_0x5c6cc3(0x133)](_0x5c6cc3(0x148))[_0x5c6cc3(0x14f)](_0x5c6cc3(0x12c),function(){ResultTab(),menuTools();}),document[_0x5c6cc3(0x133)]('setResultZoom')['addEventListener'](_0x5c6cc3(0x136),function(){setResultZoom();}),run();
+//define all editors to ace.editor
+const htmlTab = ace.edit("html-code");
+const cssTab = ace.edit("css-code");
+const jsTab = ace.edit("js-code");
+const HtmlHead = ace.edit("HtmlHead");
+
+//html editor setup
+htmlTab.getSession().setMode("ace/mode/html");
+htmlTab.setTheme("ace/theme/idle_fingers");
+htmlTab.session.setTabSize(4);
+htmlTab.session.setUseWrapMode(false);
+htmlTab.setShowPrintMargin(false);
+htmlTab.setHighlightActiveLine(true);
+htmlTab.setShowInvisibles(true);
+htmlTab.setReadOnly(false);
+htmlTab.setOptions({
+    enableBasicAutocompletion: true,
+    enableSnippets: true,
+    enableLiveAutocompletion: true,
+    tooltipFollowsMouse: false
+})
+//css editor setup
+cssTab.getSession().setMode("ace/mode/css");
+cssTab.setTheme("ace/theme/idle_fingers");
+cssTab.session.setTabSize(4);
+cssTab.session.setUseWrapMode(false);
+cssTab.setShowPrintMargin(false);
+cssTab.setHighlightActiveLine(true);
+cssTab.setShowInvisibles(true);
+cssTab.setReadOnly(false);
+cssTab.setOptions({
+    enableBasicAutocompletion: true,
+    enableSnippets: true,
+    enableLiveAutocompletion: true,
+    tooltipFollowsMouse: false
+})
+//js editor setup
+jsTab.getSession().setMode("ace/mode/javascript");
+jsTab.setTheme("ace/theme/idle_fingers");
+jsTab.session.setTabSize(4);
+jsTab.session.setUseWrapMode(false);
+jsTab.setShowPrintMargin(false);
+jsTab.setHighlightActiveLine(true);
+jsTab.setShowInvisibles(true);
+jsTab.setReadOnly(false);
+jsTab.setOptions({
+    enableBasicAutocompletion: true,
+    enableSnippets: true,
+    enableLiveAutocompletion: true,
+    tooltipFollowsMouse: false
+})
+// head tag editor
+HtmlHead.getSession().setMode("ace/mode/html");
+HtmlHead.setTheme("ace/theme/idle_fingers");
+HtmlHead.session.setTabSize(4);
+HtmlHead.session.setUseWrapMode(false);
+HtmlHead.setShowPrintMargin(false);
+HtmlHead.setHighlightActiveLine(true);
+HtmlHead.setShowInvisibles(true);
+HtmlHead.renderer.setShowGutter(false);
+HtmlHead.setReadOnly(false);
+HtmlHead.setOptions({
+    enableBasicAutocompletion: false,
+    enableSnippets: false,
+    enableLiveAutocompletion: false,
+    tooltipFollowsMouse: false
+})
+
+//change events for all editor to run app:
+htmlTab.session.on('change', function(delta) {run()});
+cssTab.session.on('change', function(delta) {run()});
+jsTab.session.on('change', function(delta) {run()});
+HtmlHead.session.on('change', function(delta) {run()});
+
+
+// OnClick Events:
+document.getElementById("menuSettings").addEventListener("click",function(){openMenuWindow()});
+document.getElementById("navHtml").addEventListener("click",function(){HtmlTab()});
+document.getElementById("navCss").addEventListener("click",function(){CssTab()});
+document.getElementById("navJs").addEventListener("click",function(){JsTab()});
+document.getElementById("navResult").addEventListener("click",function(){ResultTab()});
+document.getElementById("menuTools").addEventListener("click",function(){menuTools()});
+document.getElementById("closeMenuWindow").addEventListener("click",function(){closeMenuWindow()});
+document.getElementById("closeMenuWindowDiv").addEventListener("click",function(){closeMenuWindow()});
+document.getElementById("htmlMenuNav").addEventListener("click",function(){HtmlMenuTab()});
+document.getElementById("cssMenuNav").addEventListener("click",function(){CssMenuTab()});
+document.getElementById("jsMenuNav").addEventListener("click",function(){JsMenuTab()});
+document.getElementById("resultMenuNav").addEventListener("click",function(){ResultMenuTab()});
+document.getElementById("addStyleSheet").addEventListener("click",function(){iframeHeadAdd()});
+document.getElementById("addNewStyleSheet").addEventListener("click",function(){addNewStyleSheet()});
+document.getElementById("addScript").addEventListener("click",function(){iframeHeadAdd()});
+document.getElementById("addNewScript").addEventListener("click",function(){addNewScript()});
+document.getElementById("RunJs").addEventListener("click",function(){jsRun()});
+document.getElementById("overlay-2").addEventListener("click",function(){menuTools()});
+document.getElementById("toolsSettings").addEventListener("click",function(){openMenuWindow();menuTools()});
+document.getElementById("FullScreenView").addEventListener("click",function(){FullScreenView();menuTools()});
+document.getElementById("EditorView").addEventListener("click",function(){ResultTab();menuTools()});
+document.getElementById("setResultZoom").addEventListener("change",function(){setResultZoom()});
+//document.getElementById("").addEventListener("click",function(){});
+
+
+
+
+
+//run the app for first time
+run();

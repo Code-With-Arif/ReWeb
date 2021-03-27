@@ -1,1 +1,249 @@
-const _0x5e6a=['contentDocument','result','script','#cssMenuNav','getElementById','border-top:\x20none','none','html-div','open','button','innerText','#htmlMenu','#web-result','length','2gYGLZB','1foKFif','<scri','https://yourdomain.com/script.js','stylesheetDel','parentElement','getElementsByClassName','139079gMSSSs','border:none','40vh','51TkciAs','41.5vh','0.25','\x27></script>','6309rgGrMA','css','43VXDPhF','172997URXeAN','display','<script\x20src=\x27js/console.js\x27></script><script>eruda.init({tool:\x20[\x27console\x27,\x27elements\x27]});</script>','<style\x20type=\x27text/css\x27>','appendChild','value','110629kwiQOg','editor','innerHTML','menuTools','#ea0','#cssMenu','head','div','customScript','height','#resultMenu','childNodes','stylesheetDel-','<script\x20src=\x27js/console.js\x27></script><script>eruda.init({tool:\x20[\x27console\x27,\x27element\x27]});</script>','stylesheet-','wrap','script-','https://yourdomain.com/style.css','<script\x20type=\x27text/javascript\x27\x20src=\x27','</scri','innerWidth','#jsMenuNav','<link\x20rel=\x27stylesheet\x27\x20href=\x27','scriptDel-','js-div','add','css-div','createElement','toolsMenuBody','1.0','border-top:\x202px\x20solid\x20#fff','EditorView','contentWindow','deleteThis(\x27','customStyleSheetsBody','style','285DtcxHl','document','#jsMenu','FullScreenView','138891izITMP','stylesheet','</style>','removeChild','prototype','remove','color','block','#resultMenuNav','menuWindow','code','querySelector','customStyleSheet-','customScript-','#htmlMenuNav','write','html','pt>','setAttribute','85303WDHWzU','classList','navJs',';\x20-webkit-transform:\x20scale(','getValue','83vh','navResult','input'];const _0x4529=function(_0x49e691,_0x56142e){_0x49e691=_0x49e691-0x144;let _0x5e6ab9=_0x5e6a[_0x49e691];return _0x5e6ab9;};const _0xa8eb81=_0x4529;(function(_0x2d171e,_0x495e43){const _0x1aa529=_0x4529;while(!![]){try{const _0xdfb52d=parseInt(_0x1aa529(0x19c))*parseInt(_0x1aa529(0x19a))+parseInt(_0x1aa529(0x1a3))+parseInt(_0x1aa529(0x193))*-parseInt(_0x1aa529(0x18c))+parseInt(_0x1aa529(0x19d))+-parseInt(_0x1aa529(0x163))+-parseInt(_0x1aa529(0x15f))*parseInt(_0x1aa529(0x196))+-parseInt(_0x1aa529(0x176))*-parseInt(_0x1aa529(0x18d));if(_0xdfb52d===_0x495e43)break;else _0x2d171e['push'](_0x2d171e['shift']());}catch(_0x2668f3){_0x2d171e['push'](_0x2d171e['shift']());}}}(_0x5e6a,0x32ef8));const resultTab=document[_0xa8eb81(0x16e)](_0xa8eb81(0x18a)),navHtml=document[_0xa8eb81(0x182)]('navHtml'),navCss=document[_0xa8eb81(0x182)]('navCss'),navJs=document[_0xa8eb81(0x182)](_0xa8eb81(0x178)),navResult=document[_0xa8eb81(0x182)](_0xa8eb81(0x17c));var curentTab='html',resultTabActivate=!![],jsAutoRender=![],styleSheetInput=0x1,scriptInput=0x1,menuToolActive=![],fullScreenView=![];function setAttributes(_0x3c65e5,_0x1791fd){const _0x416f25=_0xa8eb81;for(var _0x4a0937 in _0x1791fd){_0x3c65e5[_0x416f25(0x175)](_0x4a0937,_0x1791fd[_0x4a0937]);}}Element['prototype'][_0xa8eb81(0x168)]=function(){const _0x5a2058=_0xa8eb81;this[_0x5a2058(0x191)]['removeChild'](this);},NodeList[_0xa8eb81(0x167)][_0xa8eb81(0x168)]=HTMLCollection[_0xa8eb81(0x167)][_0xa8eb81(0x168)]=function(){const _0x495e4e=_0xa8eb81;for(var _0x3fd5a5=this[_0x495e4e(0x18b)]-0x1;_0x3fd5a5>=0x0;_0x3fd5a5--){this[_0x3fd5a5]&&this[_0x3fd5a5]['parentElement']&&this[_0x3fd5a5][_0x495e4e(0x191)][_0x495e4e(0x166)](this[_0x3fd5a5]);}};function iframeHeadAdd(){const _0x18dfeb=_0xa8eb81;var _0x1c1ab1=HtmlHead[_0x18dfeb(0x17a)]();let _0x5ee00a=document[_0x18dfeb(0x192)]('customStyleSheet'),_0x3fdacc=document['getElementsByClassName'](_0x18dfeb(0x1ab));consoleFrame=_0x18dfeb(0x148);let _0x23916c=_0x18dfeb(0x1a0)+cssTab[_0x18dfeb(0x17a)]()+_0x18dfeb(0x165);_0x1c1ab1=_0x1c1ab1+_0x23916c+consoleFrame;for(let _0x2db1d8=0x0;_0x2db1d8<_0x5ee00a['length'];_0x2db1d8++){_0x1c1ab1=_0x1c1ab1+_0x18dfeb(0x151)+_0x5ee00a[_0x2db1d8][_0x18dfeb(0x146)][0x1][_0x18dfeb(0x1a2)]+'\x27>';}for(let _0x2f7ac3=0x0;_0x2f7ac3<_0x3fdacc[_0x18dfeb(0x18b)];_0x2f7ac3++){_0x1c1ab1=_0x1c1ab1+_0x18dfeb(0x14d)+_0x3fdacc[_0x2f7ac3]['childNodes'][0x1][_0x18dfeb(0x1a2)]+_0x18dfeb(0x199);}resultTab[_0x18dfeb(0x17e)][_0x18dfeb(0x1a9)][_0x18dfeb(0x1a5)]=_0x1c1ab1;}function run(){const _0x6224cd=_0xa8eb81;var _0x1596aa=htmlTab[_0x6224cd(0x17a)]();let _0x3643b6=_0x6224cd(0x18e)+_0x6224cd(0x174)+jsTab[_0x6224cd(0x17a)]()+_0x6224cd(0x14e)+_0x6224cd(0x174);consoleFrame=_0x6224cd(0x19f),webCode=_0x1596aa+consoleFrame,jsAutoRender===!![]&&(webCode=webCode+_0x3643b6),result=resultTab['contentWindow'][_0x6224cd(0x160)],result[_0x6224cd(0x186)](),result[_0x6224cd(0x172)](webCode),result['close'](),iframeHeadAdd();}function jsRun(){const _0x2cfab6=_0xa8eb81;var _0x2b8e2a=htmlTab['getValue']();let _0x2dbf90=_0x2cfab6(0x18e)+_0x2cfab6(0x174)+jsTab[_0x2cfab6(0x17a)]()+'</scri'+_0x2cfab6(0x174);consoleFrame=_0x2cfab6(0x19f),webCode=_0x2b8e2a+consoleFrame+_0x2dbf90,result=resultTab[_0x2cfab6(0x15b)]['document'],result['open'](),result[_0x2cfab6(0x172)](webCode),result['close'](),iframeHeadAdd();}function HtmlTab(){const _0x29f680=_0xa8eb81;curentTab=_0x29f680(0x173),navHtml[_0x29f680(0x175)](_0x29f680(0x15e),_0x29f680(0x159)),navCss['setAttribute']('style',_0x29f680(0x194)),navJs['setAttribute'](_0x29f680(0x15e),'border:none'),document[_0x29f680(0x182)](_0x29f680(0x185))['style']['display']=_0x29f680(0x16a),document[_0x29f680(0x182)]('css-div')['style'][_0x29f680(0x19e)]=_0x29f680(0x184),document[_0x29f680(0x182)](_0x29f680(0x153))[_0x29f680(0x15e)][_0x29f680(0x19e)]='none';}function CssTab(){const _0x29c366=_0xa8eb81;curentTab=_0x29c366(0x19b),navHtml[_0x29c366(0x175)](_0x29c366(0x15e),_0x29c366(0x194)),navCss['setAttribute'](_0x29c366(0x15e),_0x29c366(0x159)),navJs[_0x29c366(0x175)]('style',_0x29c366(0x194)),document[_0x29c366(0x182)](_0x29c366(0x185))[_0x29c366(0x15e)][_0x29c366(0x19e)]=_0x29c366(0x184),document[_0x29c366(0x182)]('css-div')[_0x29c366(0x15e)][_0x29c366(0x19e)]=_0x29c366(0x16a),document[_0x29c366(0x182)](_0x29c366(0x153))[_0x29c366(0x15e)]['display']=_0x29c366(0x184);}function JsTab(){const _0x4c74ce=_0xa8eb81;curentTab='js',navHtml[_0x4c74ce(0x175)]('style',_0x4c74ce(0x194)),navCss[_0x4c74ce(0x175)](_0x4c74ce(0x15e),'border:none'),navJs[_0x4c74ce(0x175)]('style',_0x4c74ce(0x159)),document[_0x4c74ce(0x182)](_0x4c74ce(0x185))[_0x4c74ce(0x15e)][_0x4c74ce(0x19e)]=_0x4c74ce(0x184),document[_0x4c74ce(0x182)](_0x4c74ce(0x155))[_0x4c74ce(0x15e)][_0x4c74ce(0x19e)]='none',document['getElementById'](_0x4c74ce(0x153))['style'][_0x4c74ce(0x19e)]='block';}function ResultTab(){const _0x399e8b=_0xa8eb81;resultTabActivate===!![]?(resultTabActivate=![],navResult[_0x399e8b(0x175)]('style',_0x399e8b(0x183)),document[_0x399e8b(0x182)](_0x399e8b(0x17f))[_0x399e8b(0x15e)][_0x399e8b(0x19e)]=_0x399e8b(0x184),document[_0x399e8b(0x182)](_0x399e8b(0x1a4))[_0x399e8b(0x15e)][_0x399e8b(0x144)]=_0x399e8b(0x17b),document['getElementsByClassName']('code')[0x0][_0x399e8b(0x15e)][_0x399e8b(0x144)]=_0x399e8b(0x17b),document['getElementsByClassName'](_0x399e8b(0x16d))[0x1][_0x399e8b(0x15e)]['height']='83vh',document[_0x399e8b(0x192)](_0x399e8b(0x16d))[0x2][_0x399e8b(0x15e)][_0x399e8b(0x144)]=_0x399e8b(0x17b),document['getElementById'](_0x399e8b(0x15a))['style'][_0x399e8b(0x169)]='#fff'):(resultTabActivate=!![],navResult[_0x399e8b(0x175)](_0x399e8b(0x15e),'border-top:\x202px\x20solid\x20#fff'),document['getElementById']('result')[_0x399e8b(0x15e)][_0x399e8b(0x19e)]=_0x399e8b(0x16a),document[_0x399e8b(0x182)](_0x399e8b(0x1a4))[_0x399e8b(0x15e)][_0x399e8b(0x144)]='40vh',document[_0x399e8b(0x192)](_0x399e8b(0x16d))[0x0][_0x399e8b(0x15e)][_0x399e8b(0x144)]=_0x399e8b(0x195),document[_0x399e8b(0x192)](_0x399e8b(0x16d))[0x1][_0x399e8b(0x15e)][_0x399e8b(0x144)]='40vh',document[_0x399e8b(0x192)](_0x399e8b(0x16d))[0x2][_0x399e8b(0x15e)][_0x399e8b(0x144)]=_0x399e8b(0x195),document['getElementById']('EditorView')['style']['color']=_0x399e8b(0x1a7));}function openMenuWindow(){const _0x30522a=_0xa8eb81;document[_0x30522a(0x182)](_0x30522a(0x16c))[_0x30522a(0x15e)][_0x30522a(0x19e)]=_0x30522a(0x16a);}function closeMenuWindow(){const _0x4bbd1b=_0xa8eb81;document[_0x4bbd1b(0x182)](_0x4bbd1b(0x16c))['style']['display']=_0x4bbd1b(0x184);}function HtmlMenuTab(){const _0x485847=_0xa8eb81;document[_0x485847(0x16e)]('#htmlMenu')['style']['display']='block',document[_0x485847(0x16e)](_0x485847(0x1a8))[_0x485847(0x15e)][_0x485847(0x19e)]=_0x485847(0x184),document[_0x485847(0x16e)](_0x485847(0x161))[_0x485847(0x15e)]['display']=_0x485847(0x184),document[_0x485847(0x16e)](_0x485847(0x145))[_0x485847(0x15e)][_0x485847(0x19e)]='none',document['querySelector'](_0x485847(0x171))[_0x485847(0x175)](_0x485847(0x15e),_0x485847(0x159)),document['querySelector']('#cssMenuNav')[_0x485847(0x175)](_0x485847(0x15e),_0x485847(0x194)),document[_0x485847(0x16e)]('#jsMenuNav')[_0x485847(0x175)](_0x485847(0x15e),_0x485847(0x194)),document[_0x485847(0x16e)](_0x485847(0x16b))[_0x485847(0x175)](_0x485847(0x15e),'border:none');}function CssMenuTab(){const _0x283f09=_0xa8eb81;document[_0x283f09(0x16e)](_0x283f09(0x189))[_0x283f09(0x15e)][_0x283f09(0x19e)]=_0x283f09(0x184),document['querySelector'](_0x283f09(0x1a8))[_0x283f09(0x15e)][_0x283f09(0x19e)]=_0x283f09(0x16a),document[_0x283f09(0x16e)](_0x283f09(0x161))[_0x283f09(0x15e)][_0x283f09(0x19e)]=_0x283f09(0x184),document['querySelector'](_0x283f09(0x145))[_0x283f09(0x15e)][_0x283f09(0x19e)]='none',document[_0x283f09(0x16e)](_0x283f09(0x171))[_0x283f09(0x175)]('style','border:none'),document[_0x283f09(0x16e)](_0x283f09(0x181))['setAttribute'](_0x283f09(0x15e),_0x283f09(0x159)),document[_0x283f09(0x16e)](_0x283f09(0x150))[_0x283f09(0x175)](_0x283f09(0x15e),'border:none'),document['querySelector'](_0x283f09(0x16b))[_0x283f09(0x175)](_0x283f09(0x15e),_0x283f09(0x194));}function JsMenuTab(){const _0x281374=_0xa8eb81;document[_0x281374(0x16e)](_0x281374(0x189))[_0x281374(0x15e)][_0x281374(0x19e)]=_0x281374(0x184),document[_0x281374(0x16e)](_0x281374(0x1a8))[_0x281374(0x15e)][_0x281374(0x19e)]='none',document[_0x281374(0x16e)](_0x281374(0x161))[_0x281374(0x15e)][_0x281374(0x19e)]=_0x281374(0x16a),document['querySelector'](_0x281374(0x145))['style'][_0x281374(0x19e)]=_0x281374(0x184),document['querySelector']('#htmlMenuNav')[_0x281374(0x175)](_0x281374(0x15e),_0x281374(0x194)),document[_0x281374(0x16e)](_0x281374(0x181))[_0x281374(0x175)](_0x281374(0x15e),_0x281374(0x194)),document[_0x281374(0x16e)](_0x281374(0x150))['setAttribute']('style',_0x281374(0x159)),document[_0x281374(0x16e)](_0x281374(0x16b))['setAttribute'](_0x281374(0x15e),_0x281374(0x194));}function ResultMenuTab(){const _0x1cdedb=_0xa8eb81;document[_0x1cdedb(0x16e)](_0x1cdedb(0x189))[_0x1cdedb(0x15e)][_0x1cdedb(0x19e)]=_0x1cdedb(0x184),document[_0x1cdedb(0x16e)](_0x1cdedb(0x1a8))['style']['display']=_0x1cdedb(0x184),document[_0x1cdedb(0x16e)](_0x1cdedb(0x161))[_0x1cdedb(0x15e)][_0x1cdedb(0x19e)]=_0x1cdedb(0x184),document['querySelector'](_0x1cdedb(0x145))['style']['display']=_0x1cdedb(0x16a),document[_0x1cdedb(0x16e)]('#htmlMenuNav')['setAttribute']('style',_0x1cdedb(0x194)),document['querySelector']('#cssMenuNav')[_0x1cdedb(0x175)](_0x1cdedb(0x15e),'border:none'),document[_0x1cdedb(0x16e)](_0x1cdedb(0x150))['setAttribute'](_0x1cdedb(0x15e),_0x1cdedb(0x194)),document[_0x1cdedb(0x16e)]('#resultMenuNav')['setAttribute']('style','border-top:\x202px\x20solid\x20#fff');}function addNewStyleSheet(){const _0x2e092e=_0xa8eb81;let _0x416b03=document[_0x2e092e(0x156)](_0x2e092e(0x1aa));_0x416b03['classList']['add']('customStyleSheet'),_0x416b03[_0x2e092e(0x175)]('id',_0x2e092e(0x16f)+(styleSheetInput+0x1));let _0x2b28f1=document[_0x2e092e(0x156)](_0x2e092e(0x17d));setAttributes(_0x2b28f1,{'type':'text','name':_0x2e092e(0x149)+(styleSheetInput+0x1),'class':_0x2e092e(0x164),'id':'stylesheet-'+(styleSheetInput+0x1),'placeholder':_0x2e092e(0x14c)});let _0xde27b4=document[_0x2e092e(0x156)]('button');setAttributes(_0xde27b4,{'class':_0x2e092e(0x190),'id':_0x2e092e(0x147)+(styleSheetInput+0x1),'onclick':'deleteThis(\x27'+_0x2e092e(0x16f)+(styleSheetInput+0x1)+'\x27)'}),_0xde27b4[_0x2e092e(0x188)]='×',_0x416b03['appendChild'](_0x2b28f1),_0x416b03[_0x2e092e(0x1a1)](_0xde27b4),document[_0x2e092e(0x182)](_0x2e092e(0x15d))[_0x2e092e(0x1a1)](_0x416b03),styleSheetInput=styleSheetInput+0x1;}function addNewScript(){const _0x23e6d4=_0xa8eb81;let _0x32cdd5=document[_0x23e6d4(0x156)](_0x23e6d4(0x1aa));_0x32cdd5[_0x23e6d4(0x177)][_0x23e6d4(0x154)](_0x23e6d4(0x1ab)),_0x32cdd5[_0x23e6d4(0x175)]('id',_0x23e6d4(0x170)+(scriptInput+0x1));let _0x5acd0d=document[_0x23e6d4(0x156)](_0x23e6d4(0x17d));setAttributes(_0x5acd0d,{'type':'text','name':_0x23e6d4(0x14b)+(scriptInput+0x1),'class':_0x23e6d4(0x180),'id':_0x23e6d4(0x14b)+(scriptInput+0x1),'placeholder':_0x23e6d4(0x18f)});let _0x29e0da=document['createElement'](_0x23e6d4(0x187));setAttributes(_0x29e0da,{'class':'scriptDel','id':_0x23e6d4(0x152)+(scriptInput+0x1),'onclick':_0x23e6d4(0x15c)+'customScript-'+(scriptInput+0x1)+'\x27)'}),_0x29e0da[_0x23e6d4(0x188)]='×',_0x32cdd5[_0x23e6d4(0x1a1)](_0x5acd0d),_0x32cdd5[_0x23e6d4(0x1a1)](_0x29e0da),document[_0x23e6d4(0x182)]('customScriptsBody')[_0x23e6d4(0x1a1)](_0x32cdd5),scriptInput=scriptInput+0x1;}function deleteThis(_0x295000){const _0x29e5ab=_0xa8eb81;let _0x350ffa=document[_0x29e5ab(0x182)](_0x295000)[_0x29e5ab(0x168)]();iframeHeadAdd();}function menuTools(){const _0x10afbf=_0xa8eb81;menuToolActive===![]?(menuToolActive=!![],document[_0x10afbf(0x182)](_0x10afbf(0x157))[_0x10afbf(0x15e)][_0x10afbf(0x19e)]='block',document[_0x10afbf(0x182)](_0x10afbf(0x1a6))[_0x10afbf(0x175)]('style','background-color:#212121;border-radius:8px\x208px\x200px\x200px')):(menuToolActive=![],document[_0x10afbf(0x182)](_0x10afbf(0x157))['style'][_0x10afbf(0x19e)]='none',document[_0x10afbf(0x182)]('menuTools')[_0x10afbf(0x175)](_0x10afbf(0x15e),''));}function FullScreenView(){const _0x20972f=_0xa8eb81;fullScreenView===![]?(fullScreenView=!![],document['getElementById'](_0x20972f(0x1a4))[_0x20972f(0x15e)][_0x20972f(0x19e)]=_0x20972f(0x184),document[_0x20972f(0x182)](_0x20972f(0x17f))['style'][_0x20972f(0x19e)]=_0x20972f(0x16a),document[_0x20972f(0x182)](_0x20972f(0x17f))[_0x20972f(0x15e)][_0x20972f(0x144)]='81.5vh',document['getElementById']('FullScreenView')[_0x20972f(0x15e)][_0x20972f(0x169)]=_0x20972f(0x1a7)):(fullScreenView=![],document[_0x20972f(0x182)]('editor')[_0x20972f(0x15e)][_0x20972f(0x19e)]=_0x20972f(0x16a),document['getElementById'](_0x20972f(0x17f))[_0x20972f(0x15e)]['height']=_0x20972f(0x197),document[_0x20972f(0x182)](_0x20972f(0x162))[_0x20972f(0x15e)][_0x20972f(0x169)]='#fff');}function setResultZoom(){const _0x264384=_0xa8eb81;let _0x40c72c=window[_0x264384(0x14f)],_0x1fe06a=document[_0x264384(0x182)](_0x264384(0x14a))['scrollHeight'],_0xb2665=document[_0x264384(0x16e)]('#setResultZoom')['value'],_0x4b1cdd,_0x5ce278;_0xb2665===_0x264384(0x158)&&(_0x4b1cdd=_0x40c72c,_0x5ce278=_0x1fe06a),_0xb2665==='0.50'&&(_0x4b1cdd=_0x40c72c*0x2,_0x5ce278=_0x1fe06a*0x2),_0xb2665===_0x264384(0x198)&&(_0x4b1cdd=_0x40c72c*0x4,_0x5ce278=_0x1fe06a*0x4),resultTab[_0x264384(0x175)](_0x264384(0x15e),'width:'+_0x4b1cdd+';height:'+_0x5ce278+_0x264384(0x179)+_0xb2665+');-webkit-transform-origin:\x200\x200;');}
+
+const resultTab = document.querySelector("#web-result");
+
+const navHtml = document.getElementById("navHtml")
+const navCss = document.getElementById("navCss")
+const navJs = document.getElementById("navJs")
+const navResult = document.getElementById("navResult")
+
+var curentTab="html",
+    resultTabActivate=true,
+    jsAutoRender=false,
+    styleSheetInput = 1,
+    scriptInput = 1,
+    menuToolActive = false,
+    fullScreenView = false;
+
+// setAttributes function
+function setAttributes(el, attrs) {for(var key in attrs) {el.setAttribute(key, attrs[key]);}}
+Element.prototype.remove = function() {this.parentElement.removeChild(this);}
+NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {for(var i = this.length - 1; i >= 0; i--) {if(this[i] && this[i].parentElement) {this[i].parentElement.removeChild(this[i]);}}}
+
+// add elements to the head tag
+function iframeHeadAdd(){
+    var iframeHead = HtmlHead.getValue();
+    let styleSheet = document.getElementsByClassName("customStyleSheet");
+    let script = document.getElementsByClassName("customScript");
+    consoleFrame = "<script src='js/console.js'></script><script>eruda.init({tool: ['console','element']});</script>";
+    let cssCode = "<style type='text/css'>"+cssTab.getValue()+"</style>";
+    iframeHead=iframeHead+cssCode+consoleFrame;
+    for(let i=0;i<styleSheet.length;i++){
+        iframeHead = iframeHead+"<link rel='stylesheet' href='"+ styleSheet[i].childNodes[1].value +"'>";
+    }
+    for(let i=0;i<script.length;i++){
+        iframeHead = iframeHead+"<script type='text/javascript' src='"+ script[i].childNodes[1].value +"'></script>";
+    }
+    resultTab.contentDocument.head.innerHTML = iframeHead;
+}
+// run app
+function run(){
+    var htmlCode = htmlTab.getValue();
+    let jsCode = "<scri"+"pt>"+jsTab.getValue()+"</scri"+"pt>";
+    consoleFrame = "<script src='js/console.js'></script><script>eruda.init({tool: ['console','elements']});</script>";
+    webCode = htmlCode+consoleFrame;
+    if(jsAutoRender===true){webCode=webCode+jsCode}
+    result = resultTab.contentWindow.document;
+    result.open();
+    result.write(webCode);
+    result.close();
+    iframeHeadAdd();
+}
+// run javascript
+function jsRun(){
+    var htmlCode = htmlTab.getValue();
+    let jsCode = "<scri"+"pt>"+jsTab.getValue()+"</scri"+"pt>";
+    consoleFrame = "<script src='js/console.js'></script><script>eruda.init({tool: ['console','elements']});</script>";
+    webCode = htmlCode+consoleFrame+jsCode;
+    result = resultTab.contentWindow.document;
+    result.open();
+    result.write(webCode);
+    result.close();
+    iframeHeadAdd();
+}
+// Change working Tab;
+function HtmlTab(){
+    curentTab = "html";
+    navHtml.setAttribute("style","border-top: 2px solid #fff");
+    navCss.setAttribute("style","border:none");
+    navJs.setAttribute("style","border:none");
+    document.getElementById("html-div").style.display = "block";
+    document.getElementById("css-div").style.display = "none";
+    document.getElementById("js-div").style.display = "none";
+}
+function CssTab(){
+    curentTab = "css";
+    navHtml.setAttribute("style","border:none");
+    navCss.setAttribute("style","border-top: 2px solid #fff");
+    navJs.setAttribute("style","border:none");
+    document.getElementById("html-div").style.display = "none";
+    document.getElementById("css-div").style.display = "block";
+    document.getElementById("js-div").style.display = "none";
+}
+function JsTab(){
+    curentTab = "js";
+    navHtml.setAttribute("style","border:none");
+    navCss.setAttribute("style","border:none");
+    navJs.setAttribute("style","border-top: 2px solid #fff");
+    document.getElementById("html-div").style.display = "none";
+    document.getElementById("css-div").style.display = "none";
+    document.getElementById("js-div").style.display = "block";
+}
+function ResultTab(){
+    if(resultTabActivate === true){
+        resultTabActivate = false;
+        navResult.setAttribute("style","border-top: none");
+        document.getElementById("result").style.display = "none";
+        document.getElementById("editor").style.height = "83vh";
+        document.getElementsByClassName("code")[0].style.height = "83vh";
+        document.getElementsByClassName("code")[1].style.height = "83vh";
+        document.getElementsByClassName("code")[2].style.height = "83vh";
+        document.getElementById("EditorView").style.color = "#fff";
+        
+    }else{
+        resultTabActivate = true;
+        navResult.setAttribute("style","border-top: 2px solid #fff");
+        document.getElementById("result").style.display = "block";
+        document.getElementById("editor").style.height = "40vh";
+        document.getElementsByClassName("code")[0].style.height = "40vh";
+        document.getElementsByClassName("code")[1].style.height = "40vh";
+        document.getElementsByClassName("code")[2].style.height = "40vh";
+        document.getElementById("EditorView").style.color = "#ea0";
+    }
+}
+function openMenuWindow(){
+    document.getElementById("menuWindow").style.display = "block";
+}
+function closeMenuWindow(){
+    document.getElementById("menuWindow").style.display = "none";
+}
+function HtmlMenuTab(){
+    document.querySelector("#htmlMenu").style.display="block";
+    document.querySelector("#cssMenu").style.display="none";
+    document.querySelector("#jsMenu").style.display="none";
+    document.querySelector("#resultMenu").style.display="none";
+    
+    document.querySelector("#htmlMenuNav").setAttribute("style","border-top: 2px solid #fff");
+    document.querySelector("#cssMenuNav").setAttribute("style","border:none");
+    document.querySelector("#jsMenuNav").setAttribute("style","border:none");
+    document.querySelector("#resultMenuNav").setAttribute("style","border:none");
+}
+function CssMenuTab(){
+    document.querySelector("#htmlMenu").style.display="none";
+    document.querySelector("#cssMenu").style.display="block";
+    document.querySelector("#jsMenu").style.display="none";
+    document.querySelector("#resultMenu").style.display="none";
+    
+    document.querySelector("#htmlMenuNav").setAttribute("style","border:none");
+    document.querySelector("#cssMenuNav").setAttribute("style","border-top: 2px solid #fff");
+    document.querySelector("#jsMenuNav").setAttribute("style","border:none");
+    document.querySelector("#resultMenuNav").setAttribute("style","border:none");
+}
+function JsMenuTab(){
+    document.querySelector("#htmlMenu").style.display="none";
+    document.querySelector("#cssMenu").style.display="none";
+    document.querySelector("#jsMenu").style.display="block";
+    document.querySelector("#resultMenu").style.display="none";
+    
+    document.querySelector("#htmlMenuNav").setAttribute("style","border:none");
+    document.querySelector("#cssMenuNav").setAttribute("style","border:none");
+    document.querySelector("#jsMenuNav").setAttribute("style","border-top: 2px solid #fff");
+    document.querySelector("#resultMenuNav").setAttribute("style","border:none");
+}
+function ResultMenuTab(){
+    document.querySelector("#htmlMenu").style.display="none";
+    document.querySelector("#cssMenu").style.display="none";
+    document.querySelector("#jsMenu").style.display="none";
+    document.querySelector("#resultMenu").style.display="block";
+    
+    document.querySelector("#htmlMenuNav").setAttribute("style","border:none");
+    document.querySelector("#cssMenuNav").setAttribute("style","border:none");
+    document.querySelector("#jsMenuNav").setAttribute("style","border:none");
+    document.querySelector("#resultMenuNav").setAttribute("style","border-top: 2px solid #fff");
+}
+function addNewStyleSheet(){
+    let div = document.createElement("div");
+    div.classList.add("customStyleSheet");
+    div.setAttribute("id","customStyleSheet-"+(styleSheetInput+1));
+    let input = document.createElement("input");
+    setAttributes(input,{
+        "type":"text",
+        "name":"stylesheet-"+(styleSheetInput+1),
+        "class":"stylesheet",
+        "id":"stylesheet-"+(styleSheetInput+1),
+        "placeholder":"https://yourdomain.com/style.css"
+    });
+    let btn = document.createElement("button");
+    setAttributes(btn,{
+        "class":"stylesheetDel",
+        "id":"stylesheetDel-"+(styleSheetInput+1),
+        "onclick":"deleteThis('"+'customStyleSheet-'+(styleSheetInput+1)+"')"
+    });
+    btn.innerText = "×";
+    div.appendChild(input);
+    div.appendChild(btn);
+    document.getElementById("customStyleSheetsBody").appendChild(div);
+    styleSheetInput = styleSheetInput+1;
+}
+function addNewScript(){
+    let div = document.createElement("div");
+    div.classList.add("customScript");
+    div.setAttribute("id","customScript-"+(scriptInput+1));
+    let input = document.createElement("input");
+    setAttributes(input,{
+        "type":"text",
+        "name":"script-"+(scriptInput+1),
+        "class":"script",
+        "id":"script-"+(scriptInput+1),
+        "placeholder":"https://yourdomain.com/script.js"
+    });
+    let btn = document.createElement("button");
+    setAttributes(btn,{
+        "class":"scriptDel",
+        "id":"scriptDel-"+(scriptInput+1),
+        "onclick":"deleteThis('"+'customScript-'+(scriptInput+1)+"')"
+    });
+    btn.innerText = "×";
+    div.appendChild(input);
+    div.appendChild(btn);
+    document.getElementById("customScriptsBody").appendChild(div);
+    scriptInput = scriptInput+1;
+}
+function deleteThis(id){
+    let a = document.getElementById(id).remove();
+    iframeHeadAdd();
+}
+function menuTools(){
+    if(menuToolActive === false){
+        menuToolActive = true;
+        document.getElementById("toolsMenuBody").style.display = "block";
+        document.getElementById("menuTools").setAttribute("style","background-color:#212121;border-radius:8px 8px 0px 0px");
+    }else{
+        menuToolActive = false;
+        document.getElementById("toolsMenuBody").style.display = "none";
+        document.getElementById("menuTools").setAttribute("style","");
+    }
+}
+function FullScreenView(){
+    if(fullScreenView === false){
+        fullScreenView = true;
+        document.getElementById("editor").style.display = "none";
+        document.getElementById("result").style.display = "block";
+        document.getElementById("result").style.height = "81.5vh";
+        document.getElementById("FullScreenView").style.color = "#ea0";
+    }else{
+        fullScreenView = false;
+        document.getElementById("editor").style.display = "block";
+        document.getElementById("result").style.height = "41.5vh";
+        document.getElementById("FullScreenView").style.color = "#fff";
+    }
+}
+function setResultZoom(){
+    let winWidth = window.innerWidth;
+    let winHeight = document.getElementById("wrap").scrollHeight;
+    let zoom = document.querySelector("#setResultZoom").value;
+    let width,height;
+    if(zoom==="1.0"){width = winWidth;height = winHeight;}
+    if(zoom==="0.50"){width = winWidth*2;height = winHeight*2;}
+    if(zoom==="0.25"){width = winWidth*4;height = winHeight*4;}
+    resultTab.setAttribute("style","width:"+width+";height:"+height+"; -webkit-transform: scale("+zoom+");-webkit-transform-origin: 0 0;");
+}
