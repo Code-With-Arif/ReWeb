@@ -1,18 +1,19 @@
+<!--
+    ReWeb v1.2.0 | (n/c) The SPI LAB members | spilabgroups.com/ReWeb/lisence
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="description" content="ReWeb-Creat your own WebTin and enjoy creating webpages on the web!!!" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-  <script src="//cdn.jsdelivr.net/npm/eruda"></script><script>eruda.init();</script>
   <title>ReWeb-SPILAB</title>
-  <link rel="shortcut icon" href="./media/img/logo.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="media/img/logo.png" type="image/x-icon" />
   
   <link rel="stylesheet" media="screen and (max-width:600px)" href="css/index.css">
   <link rel="stylesheet" media="screen and (max-width:600px)" href="css/ace.css">
   
   <script src="js/ace/ace.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/ace/ext-language_tools.js" type="text/javascript" charset="utf-8"></script>
   
 </head>
 <body>
@@ -40,6 +41,7 @@
                 <button class="button" id="cssMenuNav">CSS</button>
                 <button class="button" id="jsMenuNav">JS</button>
                 <button class="button" id="resultMenuNav">Result</button>
+                <button class="button" id="EditorMenuNav">Editor</button>
             </header>
             <div id="htmlMenu">
                 <div id="htmlMenuHeadTag">
@@ -74,15 +76,77 @@
                     <button class="button" id="addScript">Done</button>
                     <button class="button" id="addNewScript">add new</button>
                 </div>
+                <div id="JsAutoRenderDiv">
+                    <hr class="menuHr"/>
+                    JSAutoRender:
+                    <label class="switch" style="transform: translateY(-13px);">
+                        <input type="checkbox" id="JSAutoRender">
+                        <span class="slider round"></span>
+                    </label>
+                    <p style="font-size:12px">*Turning on js-auto-render may be the cause for slow progress of this application</p>
+                </div>
             </div>
             <div id="resultMenu">
-                <h1>Result</h1>
-                <h3 id="setZoomResult">Set Result Zoom:</h3>
+                <h4 id="setZoomResult">Set Result Zoom:</h4>
                 <select name="setZoom" id="setResultZoom">
                     <option value="1.0">1.0x</option>
                     <option value="0.50">0.50x</option>
                     <option value="0.25">0.25x</option>
                 </select>
+            </div>
+            <div id="EditorSettings">
+                <table style="width:100%">
+                    <tr>
+                        <td class="headTD">Theme</td>
+                        <td class="ValTD">
+                            <select id="SetTheme">
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="headTD">Tab Size</td>
+                        <td class="ValTD">
+                            <input type="number" id="TabSize" value="4" style="width:50px"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="headTD">Text Wrap</td>
+                        <td class="ValTD">
+                            <label class="switch">
+                                <input type="checkbox" id="TextWrapCheck">
+                                <span class="slider round"></span>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="headTD">Show Invisible Character</td>
+                        <td class="ValTD">
+                            <label class="switch">
+                                <input type="checkbox" id="InvisibleCharCheck" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="headTD">Read Only Mode</td>
+                        <td class="ValTD">
+                            <label class="switch">
+                                <input type="checkbox" id="ReadOnlyModeCheck">
+                                <span class="slider round"></span>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="headTD">Code Intelligence</td>
+                        <td class="ValTD">
+                            <label class="switch">
+                                <input type="checkbox" id="CodeIntelligenceCheck" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </td>
+                    </tr>
+                </table>
+                <button class="button" id="EditorDefault" style="width:auto;float:right;clear:both">Reset To Default</button>
             </div>
         </div>
     </section>
@@ -126,7 +190,20 @@
     	            <h2 class="heading">CSS</h2>
     	            <button class="close-open-tab" onclick="">ok</button>
     	        </header>
-    	        <div id="css-code" name="css-code" class="code">body{background:#000;color:#fff;text-align:center;}button{background:#000;color:#fff;border:1px solid #fff;border-radius:8px;padding:8px 20px;font-size:20px;outline:none;}</div>
+    	        <div id="css-code" name="css-code" class="code">body{
+    background:#000;
+    color:#fff;
+    text-align:center;
+}
+button{
+    background:#000;
+    color:#fff;
+    border:1px solid #fff;
+    border-radius:8px;
+    padding:8px 20px;
+    font-size:20px;
+    outline:none;
+}</div>
     	    </div>
     	    
     	    <div id="js-div">
@@ -135,7 +212,11 @@
     	            <button class="close-open-tab" onclick="">ok</button>
     	        </header>
     	        <button id="RunJs">Run</button>
-    	        <div id="js-code" name="js-code" class="code">document.getElementById("btn").addEventListener("click",e =>{document.getElementById("Txt").innerText = "Hello ReWeb";});</div>
+    	        <div id="js-code" name="js-code" class="code">document.getElementById("btn")
+.addEventListener("click",e =>{
+    document.getElementById("Txt")
+    .innerText = "Hello ReWeb";
+});</div>
     	    </div>
     	</section>
 	
@@ -155,7 +236,7 @@
 	
 	
 	
-    <script src="js/function.js"></script>
-    <script src="js/logic.js"></script>
+    
+    <script src="js/index.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>

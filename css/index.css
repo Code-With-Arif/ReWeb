@@ -37,7 +37,7 @@ html, body{
     outline: none;
     border-radius: 8px;
     color: var(--white);
-    background-color: #111;
+    background-color: #212121;
 }
 select{
     width: 100%;
@@ -79,8 +79,6 @@ select{
     outline: none;
     border: none;
     border-bottom: 2px solid #bbb;
-    background-color: #111;
-    color: var(--white);
     padding: 10px;
 }
 #css-div, #js-div{
@@ -170,8 +168,28 @@ select{
     text-align: left;
     padding: 5px 0px;
 }
-#cssMenu,#jsMenu,#resultMenu{
+#cssMenu,#jsMenu,#resultMenu,#EditorSettings{
     display: none;
+}
+.menuHr{
+    height: 1px;
+    width: 100%;
+    background-color: #fff;
+    border: none;
+    outline: none;
+}
+#EditorSettings table{
+    border: 1px solid #fff;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #fff;
+    border-collapse: collapse;
+    padding: 3px;
+}
+.headTD{}
+.ValTD{
+    text-align: center;
 }
 .customStyleSheet,.customScript{
     margin-bottom: 10px;
@@ -207,6 +225,62 @@ select{
 #customStyleSheetsBody,#customScriptsBody{
     overflow: auto;
     max-height: 35vh;
+}
+#jsAutoRenderDiv{
+    display: block;
+    float: left;
+    clear: both;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 17px;
+}
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 13px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+input:checked + .slider {
+  background-color: #2196F3;
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(13px);
+  -ms-transform: translateX(13px);
+  transform: translateX(13px);
+}
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+.slider.round:before {
+  border-radius: 50%;
 }
 #tools{
     margin: 0px;
@@ -297,7 +371,5 @@ select{
     outline: none;
     border: none;
     border: 1px solid #bbb;
-    background-color: #111;
-    color: var(--white);
     padding: 10px;
 }

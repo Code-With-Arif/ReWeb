@@ -1,10 +1,10 @@
 
 const resultTab = document.querySelector("#web-result");
 
-const navHtml = document.getElementById("navHtml")
-const navCss = document.getElementById("navCss")
-const navJs = document.getElementById("navJs")
-const navResult = document.getElementById("navResult")
+const navHtml = $("#navHtml")
+const navCss = $("#navCss")
+const navJs = $("#navJs")
+const navResult = $("#navResult")
 
 var curentTab="html",
     resultTabActivate=true,
@@ -14,16 +14,22 @@ var curentTab="html",
     menuToolActive = false,
     fullScreenView = false;
 
-// setAttributes function
-function setAttributes(el, attrs) {for(var key in attrs) {el.setAttribute(key, attrs[key]);}}
-Element.prototype.remove = function() {this.parentElement.removeChild(this);}
-NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {for(var i = this.length - 1; i >= 0; i--) {if(this[i] && this[i].parentElement) {this[i].parentElement.removeChild(this[i]);}}}
+//Set Theme options
+for(let i=0;i<AvailableTheme.length;i++){
+    opt=$("<option/>");
+    opt.attr("value",AvailableTheme[i]);
+    opt.text(AvailableTheme[i]);
+    if(AvailableTheme[i]==="idle_fingers"){
+        opt.attr("selected","");
+    }
+    opt.appendTo($("#SetTheme"));
+}
 
 // add elements to the head tag
 function iframeHeadAdd(){
     var iframeHead = HtmlHead.getValue();
-    let styleSheet = document.getElementsByClassName("customStyleSheet");
-    let script = document.getElementsByClassName("customScript");
+    let styleSheet = $(".customStyleSheet");
+    let script = $(".customScript");
     consoleFrame = "<script src='js/console.js'></script><script>eruda.init({tool: ['console','element']});</script>";
     let cssCode = "<style type='text/css'>"+cssTab.getValue()+"</style>";
     iframeHead=iframeHead+cssCode+consoleFrame;
@@ -41,7 +47,7 @@ function run(){
     let jsCode = "<scri"+"pt>"+jsTab.getValue()+"</scri"+"pt>";
     consoleFrame = "<script src='js/console.js'></script><script>eruda.init({tool: ['console','elements']});</script>";
     webCode = htmlCode+consoleFrame;
-    if(jsAutoRender===true){webCode=webCode+jsCode}
+    if(jsAutoRender==true){webCode=webCode+jsCode}
     result = resultTab.contentWindow.document;
     result.open();
     result.write(webCode);
@@ -63,183 +69,193 @@ function jsRun(){
 // Change working Tab;
 function HtmlTab(){
     curentTab = "html";
-    navHtml.setAttribute("style","border-top: 2px solid #fff");
-    navCss.setAttribute("style","border:none");
-    navJs.setAttribute("style","border:none");
-    document.getElementById("html-div").style.display = "block";
-    document.getElementById("css-div").style.display = "none";
-    document.getElementById("js-div").style.display = "none";
+    navHtml.css("border-top","2px solid #fff");
+    navCss.css("border","none");
+    navJs.css("border","none");
+    $("#html-div").show();
+    $("#css-div").hide();
+    $("#js-div").hide();
 }
 function CssTab(){
     curentTab = "css";
-    navHtml.setAttribute("style","border:none");
-    navCss.setAttribute("style","border-top: 2px solid #fff");
-    navJs.setAttribute("style","border:none");
-    document.getElementById("html-div").style.display = "none";
-    document.getElementById("css-div").style.display = "block";
-    document.getElementById("js-div").style.display = "none";
+    navHtml.css("border","none");
+    navCss.css("border-top","2px solid #fff");
+    navJs.css("border","none");
+    $("#html-div").hide();
+    $("#css-div").show();
+    $("#js-div").hide();
 }
 function JsTab(){
     curentTab = "js";
-    navHtml.setAttribute("style","border:none");
-    navCss.setAttribute("style","border:none");
-    navJs.setAttribute("style","border-top: 2px solid #fff");
-    document.getElementById("html-div").style.display = "none";
-    document.getElementById("css-div").style.display = "none";
-    document.getElementById("js-div").style.display = "block";
+    navHtml.css("border","none");
+    navCss.css("border","none");
+    navJs.css("border-top","2px solid #fff");
+    $("#html-div").hide();
+    $("#css-div").hide();
+    $("#js-div").show();
 }
 function ResultTab(){
     if(resultTabActivate === true){
         resultTabActivate = false;
-        navResult.setAttribute("style","border-top: none");
-        document.getElementById("result").style.display = "none";
-        document.getElementById("editor").style.height = "83vh";
-        document.getElementsByClassName("code")[0].style.height = "83vh";
-        document.getElementsByClassName("code")[1].style.height = "83vh";
-        document.getElementsByClassName("code")[2].style.height = "83vh";
-        document.getElementById("EditorView").style.color = "#fff";
+        navResult.css("border-top","none");
+        $("#result").hide();
+        $("#editor").css("height","83vh");
+        $(".code").css("height","83vh");
+        $("#EditorView").css("color","#fff");
         
     }else{
         resultTabActivate = true;
-        navResult.setAttribute("style","border-top: 2px solid #fff");
-        document.getElementById("result").style.display = "block";
-        document.getElementById("editor").style.height = "40vh";
-        document.getElementsByClassName("code")[0].style.height = "40vh";
-        document.getElementsByClassName("code")[1].style.height = "40vh";
-        document.getElementsByClassName("code")[2].style.height = "40vh";
-        document.getElementById("EditorView").style.color = "#ea0";
+        navResult.css("border-top","2px solid #fff");
+        $("#result").show();
+        $("#editor").css("height","40vh");
+        $(".code").css("height","40vh");
+        $("#EditorView").css("color","#ea0");
     }
 }
-function openMenuWindow(){
-    document.getElementById("menuWindow").style.display = "block";
-}
-function closeMenuWindow(){
-    document.getElementById("menuWindow").style.display = "none";
-}
 function HtmlMenuTab(){
-    document.querySelector("#htmlMenu").style.display="block";
-    document.querySelector("#cssMenu").style.display="none";
-    document.querySelector("#jsMenu").style.display="none";
-    document.querySelector("#resultMenu").style.display="none";
+    $("#htmlMenu").show();
+    $("#cssMenu").hide();
+    $("#jsMenu").hide();
+    $("#resultMenu").hide();
+    $("#EditorSettings").hide();
     
-    document.querySelector("#htmlMenuNav").setAttribute("style","border-top: 2px solid #fff");
-    document.querySelector("#cssMenuNav").setAttribute("style","border:none");
-    document.querySelector("#jsMenuNav").setAttribute("style","border:none");
-    document.querySelector("#resultMenuNav").setAttribute("style","border:none");
+    $("#htmlMenuNav").css("border-top","2px solid #fff");
+    $("#cssMenuNav").css("border","none");
+    $("#jsMenuNav").css("border","none");
+    $("#resultMenuNav").css("border","none");
+    $("#EditorMenuNav").css("border","none");
 }
 function CssMenuTab(){
-    document.querySelector("#htmlMenu").style.display="none";
-    document.querySelector("#cssMenu").style.display="block";
-    document.querySelector("#jsMenu").style.display="none";
-    document.querySelector("#resultMenu").style.display="none";
+    $("#htmlMenu").hide();
+    $("#cssMenu").show();
+    $("#jsMenu").hide();
+    $("#resultMenu").hide();
+    $("#EditorSettings").hide();
     
-    document.querySelector("#htmlMenuNav").setAttribute("style","border:none");
-    document.querySelector("#cssMenuNav").setAttribute("style","border-top: 2px solid #fff");
-    document.querySelector("#jsMenuNav").setAttribute("style","border:none");
-    document.querySelector("#resultMenuNav").setAttribute("style","border:none");
+    $("#htmlMenuNav").css("border","none");
+    $("#cssMenuNav").css("border-top","2px solid #fff");
+    $("#jsMenuNav").css("border","none");
+    $("#resultMenuNav").css("border","none");
+    $("#EditorMenuNav").css("border","none");
 }
 function JsMenuTab(){
-    document.querySelector("#htmlMenu").style.display="none";
-    document.querySelector("#cssMenu").style.display="none";
-    document.querySelector("#jsMenu").style.display="block";
-    document.querySelector("#resultMenu").style.display="none";
+    $("#htmlMenu").hide();
+    $("#cssMenu").hide();
+    $("#jsMenu").show();
+    $("#resultMenu").hide();
+    $("#EditorSettings").hide();
     
-    document.querySelector("#htmlMenuNav").setAttribute("style","border:none");
-    document.querySelector("#cssMenuNav").setAttribute("style","border:none");
-    document.querySelector("#jsMenuNav").setAttribute("style","border-top: 2px solid #fff");
-    document.querySelector("#resultMenuNav").setAttribute("style","border:none");
+    $("#htmlMenuNav").css("border","none");
+    $("#cssMenuNav").css("border","none");
+    $("#jsMenuNav").css("border-top","2px solid #fff");
+    $("#resultMenuNav").css("border","none");
+    $("#EditorMenuNav").css("border","none");
 }
 function ResultMenuTab(){
-    document.querySelector("#htmlMenu").style.display="none";
-    document.querySelector("#cssMenu").style.display="none";
-    document.querySelector("#jsMenu").style.display="none";
-    document.querySelector("#resultMenu").style.display="block";
+    $("#htmlMenu").hide();
+    $("#cssMenu").hide();
+    $("#jsMenu").hide();
+    $("#resultMenu").show();
+    $("#EditorSettings").hide();
     
-    document.querySelector("#htmlMenuNav").setAttribute("style","border:none");
-    document.querySelector("#cssMenuNav").setAttribute("style","border:none");
-    document.querySelector("#jsMenuNav").setAttribute("style","border:none");
-    document.querySelector("#resultMenuNav").setAttribute("style","border-top: 2px solid #fff");
+    $("#htmlMenuNav").css("border","none");
+    $("#cssMenuNav").css("border","none");
+    $("#jsMenuNav").css("border","none");
+    $("#resultMenuNav").css("border-top","2px solid #fff");
+    $("#EditorMenuNav").css("border","none");
+}
+function EditorMenuTab(){
+    $("#htmlMenu").hide();
+    $("#cssMenu").hide();
+    $("#jsMenu").hide();
+    $("#resultMenu").hide();
+    $("#EditorSettings").show();
+    
+    $("#htmlMenuNav").css("border","none");
+    $("#cssMenuNav").css("border","none");
+    $("#jsMenuNav").css("border","none");
+    $("#resultMenuNav").css("border","none");
+    $("#EditorMenuNav").css("border-top","2px solid #fff");
 }
 function addNewStyleSheet(){
-    let div = document.createElement("div");
-    div.classList.add("customStyleSheet");
-    div.setAttribute("id","customStyleSheet-"+(styleSheetInput+1));
-    let input = document.createElement("input");
-    setAttributes(input,{
+    let div = $("<div/>");
+    div.attr({"class":"customStyleSheet","id":"customStyleSheet-"+(styleSheetInput+1)});
+    let input = $("<input/>");
+    input.attr({
         "type":"text",
         "name":"stylesheet-"+(styleSheetInput+1),
         "class":"stylesheet",
         "id":"stylesheet-"+(styleSheetInput+1),
         "placeholder":"https://yourdomain.com/style.css"
     });
-    let btn = document.createElement("button");
-    setAttributes(btn,{
+    let btn = $("<button/>");
+    btn.attr({
         "class":"stylesheetDel",
         "id":"stylesheetDel-"+(styleSheetInput+1),
         "onclick":"deleteThis('"+'customStyleSheet-'+(styleSheetInput+1)+"')"
     });
-    btn.innerText = "×";
-    div.appendChild(input);
-    div.appendChild(btn);
-    document.getElementById("customStyleSheetsBody").appendChild(div);
+    btn.text("×");
+    input.appendTo(div)
+    btn.appendTo(div)
+    div.appendTo($("#customStyleSheetsBody"));
     styleSheetInput = styleSheetInput+1;
 }
 function addNewScript(){
-    let div = document.createElement("div");
-    div.classList.add("customScript");
-    div.setAttribute("id","customScript-"+(scriptInput+1));
-    let input = document.createElement("input");
-    setAttributes(input,{
+    let div = $("<div/>");
+    div.attr({"class":"customScript","id":"customScript-"+(scriptInput+1)});
+    let input = $("<input/>");
+    input.attr({
         "type":"text",
         "name":"script-"+(scriptInput+1),
         "class":"script",
         "id":"script-"+(scriptInput+1),
         "placeholder":"https://yourdomain.com/script.js"
     });
-    let btn = document.createElement("button");
-    setAttributes(btn,{
+    let btn = $("<button/>");
+    btn.attr({
         "class":"scriptDel",
         "id":"scriptDel-"+(scriptInput+1),
         "onclick":"deleteThis('"+'customScript-'+(scriptInput+1)+"')"
     });
-    btn.innerText = "×";
-    div.appendChild(input);
-    div.appendChild(btn);
-    document.getElementById("customScriptsBody").appendChild(div);
+    btn.text("×");
+    input.appendTo(div);
+    btn.appendTo(div);
+    div.appendTo($("#customScriptsBody"))
     scriptInput = scriptInput+1;
 }
 function deleteThis(id){
-    let a = document.getElementById(id).remove();
+    $("#"+id).remove();
     iframeHeadAdd();
 }
 function menuTools(){
     if(menuToolActive === false){
         menuToolActive = true;
-        document.getElementById("toolsMenuBody").style.display = "block";
-        document.getElementById("menuTools").setAttribute("style","background-color:#212121;border-radius:8px 8px 0px 0px");
+        $("#toolsMenuBody").show();
+        $("#menuTools").attr("style","background-color:#212121;border-radius:8px 8px 0px 0px");
     }else{
         menuToolActive = false;
-        document.getElementById("toolsMenuBody").style.display = "none";
-        document.getElementById("menuTools").setAttribute("style","");
+        $("#toolsMenuBody").hide();
+        $("#menuTools").attr("style","");
     }
 }
 function FullScreenView(){
     if(fullScreenView === false){
         fullScreenView = true;
-        document.getElementById("editor").style.display = "none";
-        document.getElementById("result").style.display = "block";
-        document.getElementById("result").style.height = "81.5vh";
-        document.getElementById("FullScreenView").style.color = "#ea0";
+        $("#editor").hide();
+        $("#result").show();
+        $("#result").css("height","81.5vh");
+        $("#FullScreenView").css("color","#ea0");
     }else{
         fullScreenView = false;
-        document.getElementById("editor").style.display = "block";
-        document.getElementById("result").style.height = "41.5vh";
-        document.getElementById("FullScreenView").style.color = "#fff";
+        $("#editor").show();
+        $("#result").css("height","41.5vh");
+        $("#FullScreenView").css("color","#fff");
     }
+    setResultZoom();
 }
 function setResultZoom(){
     let winWidth = window.innerWidth;
-    let winHeight = document.getElementById("wrap").scrollHeight;
+    let winHeight = document.querySelector("#wrap").clientHeight;
     let zoom = document.querySelector("#setResultZoom").value;
     let width,height;
     if(zoom==="1.0"){width = winWidth;height = winHeight;}

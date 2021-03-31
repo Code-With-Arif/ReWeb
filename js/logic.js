@@ -16,8 +16,7 @@ htmlTab.setReadOnly(false);
 htmlTab.setOptions({
     enableBasicAutocompletion: true,
     enableSnippets: true,
-    enableLiveAutocompletion: true,
-    tooltipFollowsMouse: false
+    enableLiveAutocompletion: true
 })
 //css editor setup
 cssTab.getSession().setMode("ace/mode/css");
@@ -31,8 +30,7 @@ cssTab.setReadOnly(false);
 cssTab.setOptions({
     enableBasicAutocompletion: true,
     enableSnippets: true,
-    enableLiveAutocompletion: true,
-    tooltipFollowsMouse: false
+    enableLiveAutocompletion: true
 })
 //js editor setup
 jsTab.getSession().setMode("ace/mode/javascript");
@@ -46,8 +44,7 @@ jsTab.setReadOnly(false);
 jsTab.setOptions({
     enableBasicAutocompletion: true,
     enableSnippets: true,
-    enableLiveAutocompletion: true,
-    tooltipFollowsMouse: false
+    enableLiveAutocompletion: true
 })
 // head tag editor
 HtmlHead.getSession().setMode("ace/mode/html");
@@ -62,43 +59,64 @@ HtmlHead.setReadOnly(false);
 HtmlHead.setOptions({
     enableBasicAutocompletion: false,
     enableSnippets: false,
-    enableLiveAutocompletion: false,
-    tooltipFollowsMouse: false
+    enableLiveAutocompletion: false
 })
 
 //change events for all editor to run app:
-htmlTab.session.on('change', function(delta) {run()});
-cssTab.session.on('change', function(delta) {run()});
-jsTab.session.on('change', function(delta) {run()});
-HtmlHead.session.on('change', function(delta) {run()});
+htmlTab.session.addEventListener('change', e=>{run()});
+cssTab.session.addEventListener('change', e=>{run()});
+jsTab.session.addEventListener('change', e=>{run()});
+HtmlHead.session.addEventListener('change', e=>{run()});
 
 
 // OnClick Events:
-document.getElementById("menuSettings").addEventListener("click",function(){openMenuWindow()});
-document.getElementById("navHtml").addEventListener("click",function(){HtmlTab()});
-document.getElementById("navCss").addEventListener("click",function(){CssTab()});
-document.getElementById("navJs").addEventListener("click",function(){JsTab()});
-document.getElementById("navResult").addEventListener("click",function(){ResultTab()});
-document.getElementById("menuTools").addEventListener("click",function(){menuTools()});
-document.getElementById("closeMenuWindow").addEventListener("click",function(){closeMenuWindow()});
-document.getElementById("closeMenuWindowDiv").addEventListener("click",function(){closeMenuWindow()});
-document.getElementById("htmlMenuNav").addEventListener("click",function(){HtmlMenuTab()});
-document.getElementById("cssMenuNav").addEventListener("click",function(){CssMenuTab()});
-document.getElementById("jsMenuNav").addEventListener("click",function(){JsMenuTab()});
-document.getElementById("resultMenuNav").addEventListener("click",function(){ResultMenuTab()});
-document.getElementById("addStyleSheet").addEventListener("click",function(){iframeHeadAdd()});
-document.getElementById("addNewStyleSheet").addEventListener("click",function(){addNewStyleSheet()});
-document.getElementById("addScript").addEventListener("click",function(){iframeHeadAdd()});
-document.getElementById("addNewScript").addEventListener("click",function(){addNewScript()});
-document.getElementById("RunJs").addEventListener("click",function(){jsRun()});
-document.getElementById("overlay-2").addEventListener("click",function(){menuTools()});
-document.getElementById("toolsSettings").addEventListener("click",function(){openMenuWindow();menuTools()});
-document.getElementById("FullScreenView").addEventListener("click",function(){FullScreenView();menuTools()});
-document.getElementById("EditorView").addEventListener("click",function(){ResultTab();menuTools()});
-document.getElementById("setResultZoom").addEventListener("change",function(){setResultZoom()});
-//document.getElementById("").addEventListener("click",function(){});
+$("#menuSettings").click(e=>{$("#menuWindow").show()});
+$("#navHtml").click(e=>{HtmlTab()});
+$("#navCss").click(e=>{CssTab()});
+$("#navJs").click(e=>{JsTab()});
+$("#navResult").click(e=>{ResultTab()});
+$("#menuTools").click(e=>{menuTools()});
+$("#closeMenuWindow").click(e=>{$("#menuWindow").hide()});
+$("#closeMenuWindowDiv").click(e=>{$("#menuWindow").hide()});
+$("#htmlMenuNav").click(e=>{HtmlMenuTab()});
+$("#cssMenuNav").click(e=>{CssMenuTab()});
+$("#jsMenuNav").click(e=>{JsMenuTab()});
+$("#resultMenuNav").click(e=>{ResultMenuTab()});
+$("#EditorMenuNav").click(e=>{EditorMenuTab()});
+$("#addStyleSheet").click(e=>{iframeHeadAdd()});
+$("#addNewStyleSheet").click(e=>{addNewStyleSheet()});
+$("#addScript").click(e=>{iframeHeadAdd()});
+$("#addNewScript").click(e=>{addNewScript()});
+$("#RunJs").click(e=>{jsRun()});
+$("#overlay-2").click(e=>{menuTools()});
+$("#toolsSettings").click(e=>{$("#menuWindow").show();menuTools()});
+$("#FullScreenView").click(e=>{FullScreenView();menuTools()});
+$("#EditorView").click(e=>{ResultTab();menuTools()});
+$("#setResultZoom").on("change",e=>{setResultZoom()});
+//$("").click(e=>{});
 
+//checkbox event
+$("#JSAutoRender").on("change",e=>{if($("#JSAutoRender").is(':checked')){jsAutoRender=true}else{jsAutoRender=false}});           
+$("#TextWrapCheck").on("change",e=>{if($("#TextWrapCheck").is(':checked')){htmlTab.session.setUseWrapMode(true);cssTab.session.setUseWrapMode(true);jsTab.session.setUseWrapMode(true);}else{htmlTab.session.setUseWrapMode(false);cssTab.session.setUseWrapMode(false);jsTab.session.setUseWrapMode(false);} });           
+$("#InvisibleCharCheck").on("change",e=>{if($("#InvisibleCharCheck").is(':checked')){htmlTab.setShowInvisibles(true);cssTab.setShowInvisibles(true);jsTab.setShowInvisibles(true);}else{htmlTab.setShowInvisibles(false);cssTab.setShowInvisibles(false);jsTab.setShowInvisibles(false);} });           
+$("#ReadOnlyModeCheck").on("change",e=>{if($("#ReadOnlyModeCheck").is(':checked')){htmlTab.setReadOnly(true);cssTab.setReadOnly(true);jsTab.setReadOnly(true);}else{htmlTab.setReadOnly(false);cssTab.setReadOnly(false);jsTab.setReadOnly(false);} });           
+$("#CodeIntelligenceCheck").on("change",e=>{if($("#CodeIntelligenceCheck").is(':checked')){htmlTab.setOptions({enableBasicAutocompletion:true,enableSnippets:true,enableLiveAutocompletion:true});cssTab.setOptions({enableBasicAutocompletion:true,enableSnippets:true,enableLiveAutocompletion:true});jsTab.setOptions({enableBasicAutocompletion:true,enableSnippets:true,enableLiveAutocompletion:true});}else{htmlTab.setOptions({enableBasicAutocompletion:false,enableSnippets:false,enableLiveAutocompletion:false});cssTab.setOptions({enableBasicAutocompletion:false,enableSnippets:false,enableLiveAutocompletion:false});jsTab.setOptions({enableBasicAutocompletion:false,enableSnippets:false,enableLiveAutocompletion:false});} });           
+//$("").on("change",e=>{if($("").is(':checked')){});           
 
+//input event
+$("#TabSize").on("change",e=>{
+    htmlTab.session.setTabSize($("#TabSize").val());
+    cssTab.session.setTabSize($("#TabSize").val());
+    jsTab.session.setTabSize($("#TabSize").val());
+});
+
+//select event
+$("#SetTheme").on("change",e=>{
+    htmlTab.setTheme("ace/theme/"+$("#SetTheme").val());
+    cssTab.setTheme("ace/theme/"+$("#SetTheme").val());
+    jsTab.setTheme("ace/theme/"+$("#SetTheme").val());
+    HtmlHead.setTheme("ace/theme/"+$("#SetTheme").val());
+});
 
 
 
