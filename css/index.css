@@ -194,6 +194,9 @@ th, td {
 .customStyleSheet,.customScript{
     margin-bottom: 10px;
 }
+#customScripts{
+    height: 83px;
+}
 .stylesheet,.script{
     width: 86%;
     outline: none;
