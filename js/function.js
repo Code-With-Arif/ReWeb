@@ -1,5 +1,6 @@
 
 const resultTab = document.querySelector("#web-result");
+const result = resultTab.contentWindow.document;
 
 const navHtml = $("#navHtml")
 const navCss = $("#navCss")
@@ -14,41 +15,45 @@ var curentTab="html",
     menuToolActive = false,
     fullScreenView = false;
 
-//Set Theme options
-for(let i=0;i<AvailableTheme.length;i++){
+//Set Light Theme options
+optgL=$("<optgroup/>")
+optgL.attr("label","Light Mode")
+for(let i=0;i<AvailableThemeLight.length;i++){
     opt=$("<option/>");
-    opt.attr("value",AvailableTheme[i]);
-    opt.text(AvailableTheme[i]);
-    if(AvailableTheme[i]==="idle_fingers"){
+    opt.attr("value",AvailableThemeLight[i]);
+    opt.text(AvailableThemeLight[i]);
+    if(AvailableThemeLight[i]==="idle_fingers"){
         opt.attr("selected","");
     }
-    opt.appendTo($("#SetTheme"));
+    opt.appendTo(optgL);
 }
+optgL.appendTo($("#SetTheme"));
+
+//Set Dark Theme options
+optgD=$("<optgroup/>")
+optgD.attr("label","Dark Mode")
+for(let i=0;i<AvailableThemeDark.length;i++){
+    opt=$("<option/>");
+    opt.attr("value",AvailableThemeDark[i]);
+    opt.text(AvailableThemeDark[i]);
+    if(AvailableThemeDark[i]==="idle_fingers"){
+        opt.attr("selected","");
+    }
+    opt.appendTo(optgD);
+}
+optgD.appendTo($("#SetTheme"));
 
 // add elements to the head tag
 function iframeHeadAdd(){
     var iframeHead = HtmlHead.getValue();
-    let styleSheet = $(".customStyleSheet");
-    let script = $(".customScript");
-    consoleFrame = "<script src='js/console.js'></script><script>eruda.init({tool: ['console','element']});</script>";
-    let cssCode = "<style type='text/css'>"+cssTab.getValue()+"</style>";
-    iframeHead=iframeHead+cssCode+consoleFrame;
-    for(let i=0;i<styleSheet.length;i++){
-        iframeHead = iframeHead+"<link rel='stylesheet' href='"+ styleSheet[i].childNodes[1].value +"'>";
-    }
-    for(let i=0;i<script.length;i++){
-        iframeHead = iframeHead+"<script type='text/javascript' src='"+ script[i].childNodes[1].value +"'></script>";
-    }
+    iframeHead=iframeHead+"<style type='text/css'>"+cssTab.getValue()+"</style>";
     resultTab.contentDocument.head.innerHTML = iframeHead;
 }
 // run app
 function run(){
     var htmlCode = htmlTab.getValue();
-    let jsCode = "<scri"+"pt>"+jsTab.getValue()+"</scri"+"pt>";
-    consoleFrame = "<script src='js/console.js'></script><script>eruda.init({tool: ['console','elements']});</script>";
-    webCode = htmlCode+consoleFrame;
-    if(jsAutoRender==true){webCode=webCode+jsCode}
-    result = resultTab.contentWindow.document;
+    var webCode = htmlCode+"<script src='js/console.js'></script><script>eruda.init({tool: ['console','elements']});</script>";
+    if(jsAutoRender==true){webCode=webCode+"<scri"+"pt>"+jsTab.getValue()+"</scri"+"pt>"}
     result.open();
     result.write(webCode);
     result.close();
@@ -60,7 +65,6 @@ function jsRun(){
     let jsCode = "<scri"+"pt>"+jsTab.getValue()+"</scri"+"pt>";
     consoleFrame = "<script src='js/console.js'></script><script>eruda.init({tool: ['console','elements']});</script>";
     webCode = htmlCode+consoleFrame+jsCode;
-    result = resultTab.contentWindow.document;
     result.open();
     result.write(webCode);
     result.close();
@@ -102,6 +106,7 @@ function ResultTab(){
         $("#editor").css("height","83vh");
         $(".code").css("height","83vh");
         $("#EditorView").css("color","#fff");
+        $(".runApp").css("top","calc(83vh + 54px)");
         
     }else{
         resultTabActivate = true;
@@ -110,6 +115,7 @@ function ResultTab(){
         $("#editor").css("height","40vh");
         $(".code").css("height","40vh");
         $("#EditorView").css("color","#ea0");
+        $(".runApp").css("top","calc(40vh + 54px)");
     }
 }
 function HtmlMenuTab(){
@@ -176,56 +182,6 @@ function EditorMenuTab(){
     $("#jsMenuNav").css("border","none");
     $("#resultMenuNav").css("border","none");
     $("#EditorMenuNav").css("border-top","2px solid #fff");
-}
-function addNewStyleSheet(){
-    let div = $("<div/>");
-    div.attr({"class":"customStyleSheet","id":"customStyleSheet-"+(styleSheetInput+1)});
-    let input = $("<input/>");
-    input.attr({
-        "type":"text",
-        "name":"stylesheet-"+(styleSheetInput+1),
-        "class":"stylesheet",
-        "id":"stylesheet-"+(styleSheetInput+1),
-        "placeholder":"https://yourdomain.com/style.css"
-    });
-    let btn = $("<button/>");
-    btn.attr({
-        "class":"stylesheetDel",
-        "id":"stylesheetDel-"+(styleSheetInput+1),
-        "onclick":"deleteThis('"+'customStyleSheet-'+(styleSheetInput+1)+"')"
-    });
-    btn.text("×");
-    input.appendTo(div)
-    btn.appendTo(div)
-    div.appendTo($("#customStyleSheetsBody"));
-    styleSheetInput = styleSheetInput+1;
-}
-function addNewScript(){
-    let div = $("<div/>");
-    div.attr({"class":"customScript","id":"customScript-"+(scriptInput+1)});
-    let input = $("<input/>");
-    input.attr({
-        "type":"text",
-        "name":"script-"+(scriptInput+1),
-        "class":"script",
-        "id":"script-"+(scriptInput+1),
-        "placeholder":"https://yourdomain.com/script.js"
-    });
-    let btn = $("<button/>");
-    btn.attr({
-        "class":"scriptDel",
-        "id":"scriptDel-"+(scriptInput+1),
-        "onclick":"deleteThis('"+'customScript-'+(scriptInput+1)+"')"
-    });
-    btn.text("×");
-    input.appendTo(div);
-    btn.appendTo(div);
-    div.appendTo($("#customScriptsBody"))
-    scriptInput = scriptInput+1;
-}
-function deleteThis(id){
-    $("#"+id).remove();
-    iframeHeadAdd();
 }
 function menuTools(){
     if(menuToolActive === false){

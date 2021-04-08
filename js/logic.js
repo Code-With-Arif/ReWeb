@@ -91,12 +91,12 @@ $("#RunJs").click(e=>{jsRun()});
 $("#overlay-2").click(e=>{menuTools()});
 $("#toolsSettings").click(e=>{$("#menuWindow").show();menuTools()});
 $("#FullScreenView").click(e=>{FullScreenView();menuTools()});
-$("#EditorView").click(e=>{ResultTab();menuTools()});
+$("#EditorView").click(e=>{ResultTab();menuTools();});
 $("#setResultZoom").on("change",e=>{setResultZoom()});
 //$("").click(e=>{});
 
 //checkbox event
-$("#JSAutoRender").on("change",e=>{if($("#JSAutoRender").is(':checked')){jsAutoRender=true}else{jsAutoRender=false}});           
+$("#JSAutoRender").on("change",e=>{if($("#JSAutoRender").is(':checked')){jsAutoRender=true;$("#RunJs").hide()}else{jsAutoRender=false;$("#RunJs").show()}});           
 $("#TextWrapCheck").on("change",e=>{if($("#TextWrapCheck").is(':checked')){htmlTab.session.setUseWrapMode(true);cssTab.session.setUseWrapMode(true);jsTab.session.setUseWrapMode(true);}else{htmlTab.session.setUseWrapMode(false);cssTab.session.setUseWrapMode(false);jsTab.session.setUseWrapMode(false);} });           
 $("#InvisibleCharCheck").on("change",e=>{if($("#InvisibleCharCheck").is(':checked')){htmlTab.setShowInvisibles(true);cssTab.setShowInvisibles(true);jsTab.setShowInvisibles(true);}else{htmlTab.setShowInvisibles(false);cssTab.setShowInvisibles(false);jsTab.setShowInvisibles(false);} });           
 $("#ReadOnlyModeCheck").on("change",e=>{if($("#ReadOnlyModeCheck").is(':checked')){htmlTab.setReadOnly(true);cssTab.setReadOnly(true);jsTab.setReadOnly(true);}else{htmlTab.setReadOnly(false);cssTab.setReadOnly(false);jsTab.setReadOnly(false);} });           
@@ -108,6 +108,9 @@ $("#TabSize").on("change",e=>{
     htmlTab.session.setTabSize($("#TabSize").val());
     cssTab.session.setTabSize($("#TabSize").val());
     jsTab.session.setTabSize($("#TabSize").val());
+});
+$("#FontSize").on("change",e=>{
+    $(".code").css("font-size",$("#FontSize").val()+"px");
 });
 
 //select event

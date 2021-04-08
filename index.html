@@ -1,25 +1,27 @@
 <!--
-    ReWeb v1.2.0 | (n/c) The SPI LAB members | spilabgroups.com/ReWeb/lisence
+    ReWeb v1.2.1 | (n/c) The SPI LAB members | spilabgroups.com/ReWeb/lisence
 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>ReWeb-SPILAB(Tryal Mode)</title>
   <meta name="description" content="ReWeb-Creat your own WebTin and enjoy creating webpages on the web!!!" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-  <title>ReWeb-SPILAB</title>
   <link rel="shortcut icon" href="media/img/logo.png" type="image/x-icon" />
   
   <link rel="stylesheet" media="screen and (max-width:600px)" href="css/index.css">
-  <link rel="stylesheet" media="screen and (max-width:600px)" href="css/ace.css">
+  <!--<link rel="stylesheet" media="screen and (min-width:600px)" href="css/dex/index.css">
+  --><link rel="stylesheet" href="css/ace.css">
   
   <script src="js/ace/ace.js" type="text/javascript" charset="utf-8"></script>
   
+  <script src="./js/console.js"></script><script>eruda.init();</script>
 </head>
 <body>
     <header id="mainHeader">
         <div id="logoDiv">
-            <h2  style="display:inline-block;text-align:left;padding:10px">ReWeb -</h2><h3 style="display:inline-block">tryal mode</h3>
+            <h2  style="display:inline-block;text-align:left;padding:10px">ReWeb -</h2><h3 style="display:inline-block">Tryal Mode</h3>
         </div>
         <div id="Nav">
             <button class="button" id="menuSettings"><img src="./media/svg/settings_light.svg" alt="settings" /></button>
@@ -32,11 +34,11 @@
     </header>
     
     <section id="menuWindow">
-        <button id="closeMenuWindow">Close</button>
         <div class="overlay" id="closeMenuWindowDiv"></div>
         <div id="menuBody">
             <header id="menuNav">
                 <h3 id="menuNavHeading">WebTin Settings</h3>
+                <button id="closeMenuWindow" style="font-size:20px">×</button>
                 <button class="button" id="htmlMenuNav" style="border-top: 2px solid #fff">HTML</button>
                 <button class="button" id="cssMenuNav">CSS</button>
                 <button class="button" id="jsMenuNav">JS</button>
@@ -47,43 +49,22 @@
                 <div id="htmlMenuHeadTag">
                     <h4>Edit Html Head Tag:</h4>
                     <br/>
-                    <p style="font-size:12px">* Don't Use "&lthead&gt...&lt/head&gt" tag. Only write the code inside.</p>
-                    <div class="codeHtmlHead" name="HtmlHead" id="HtmlHead" placeholder="<head> ... </head>">    &lt;title&gt;Re-Web&lt;/title&gt;&lt;meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1"&gt;</div>
+                    <p style="font-size:12px">* Don't Use "&lt;head&gt;...&lt;/head&gt;" tag. Only write the code inside.</p>
+                    <div style="font-size:12px;" class="codeHtmlHead" name="HtmlHead" id="HtmlHead" placeholder="<head> ... </head>">    &lt;title&gt;Re-Web&lt;/title&gt;&lt;meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1"&gt;</div>
                 </div>
             </div>
             <div id="cssMenu">
-                <div id="customStyleSheets">
-                    <p>Add Custom Css Files:</p>
-                    <div id="customStyleSheetsBody">
-                        <div class="customStyleSheet" id="customStyleSheet-1">
-                            <input type="text" name="stylesheet-1" class="stylesheet" id="stylesheet-1" placeholder="https://yourdomain.com/style.css" />
-                            <button class="stylesheetDel" id="stylesheetDel-1" onclick="deleteThis('customStyleSheet-1')">×</button>
-                        </div>
-                    </div>
-                    <button class="button" id="addStyleSheet">Done</button>
-                    <button class="button" id="addNewStyleSheet">add new</button>
-                </div>
+                
             </div>
             <div id="jsMenu">
-                <div id="customScripts">
-                    <p>Add Custom Js Files:</p>
-                    <div id="customScriptsBody">
-                        <div class="customScript" id="customScript-1">
-                            <input type="text" name="script-1" class="script" id="script-1" placeholder="https://yourdomain.com/script.js" />
-                            <button class="scriptDel" id="scriptDel-1" onclick="deleteThis('customScript-1')">×</button>
-                        </div>
-                    </div>
-                    <button class="button" id="addScript">Done</button>
-                    <button class="button" id="addNewScript">add new</button>
-                </div>
                 <div id="JsAutoRenderDiv">
                     <hr class="menuHr"/>
                     JSAutoRender:
                     <label class="switch" style="transform: translateY(-13px);">
-                        <input type="checkbox" id="JSAutoRender">
+                        <input type="checkbox" class="SlideSwitch" id="JSAutoRender">
                         <span class="slider round"></span>
                     </label>
-                    <p style="font-size:12px">*Turning on js-auto-render may be the cause for slow progress of this application</p>
+                    <p style="font-size:12px;height:28px;">*Turning on js-auto-render may be the cause for slow progress of this application</p>
                 </div>
             </div>
             <div id="resultMenu">
@@ -104,6 +85,12 @@
                         </td>
                     </tr>
                     <tr>
+                        <td class="headTD">Font Size</td>
+                        <td class="ValTD">
+                            <input type="number" id="FontSize" value="12" style="width:50px"/>
+                        </td>
+                    </tr>
+                    <tr>
                         <td class="headTD">Tab Size</td>
                         <td class="ValTD">
                             <input type="number" id="TabSize" value="4" style="width:50px"/>
@@ -113,7 +100,7 @@
                         <td class="headTD">Text Wrap</td>
                         <td class="ValTD">
                             <label class="switch">
-                                <input type="checkbox" id="TextWrapCheck">
+                                <input type="checkbox" class="SlideSwitch" id="TextWrapCheck">
                                 <span class="slider round"></span>
                             </label>
                         </td>
@@ -122,7 +109,7 @@
                         <td class="headTD">Show Invisible Character</td>
                         <td class="ValTD">
                             <label class="switch">
-                                <input type="checkbox" id="InvisibleCharCheck" checked>
+                                <input type="checkbox" class="SlideSwitch" id="InvisibleCharCheck" checked>
                                 <span class="slider round"></span>
                             </label>
                         </td>
@@ -131,7 +118,7 @@
                         <td class="headTD">Read Only Mode</td>
                         <td class="ValTD">
                             <label class="switch">
-                                <input type="checkbox" id="ReadOnlyModeCheck">
+                                <input type="checkbox" class="SlideSwitch" id="ReadOnlyModeCheck">
                                 <span class="slider round"></span>
                             </label>
                         </td>
@@ -140,7 +127,7 @@
                         <td class="headTD">Code Intelligence</td>
                         <td class="ValTD">
                             <label class="switch">
-                                <input type="checkbox" id="CodeIntelligenceCheck" checked>
+                                <input type="checkbox" class="SlideSwitch" id="CodeIntelligenceCheck" checked>
                                 <span class="slider round"></span>
                             </label>
                         </td>
@@ -148,6 +135,7 @@
                 </table>
                 <button class="button" id="EditorDefault" style="width:auto;float:right;clear:both">Reset To Default</button>
             </div>
+            
         </div>
     </section>
     
@@ -177,7 +165,7 @@
     	    <div id="html-div">
     	        <header class="tab-header">
     	            <h2 class="heading">HTML</h2>
-    	            <button class="close-open-tab" onclick="">ok</button>
+    	            <button class="close-open-tab button">ok</button>
     	        </header>
     	        <div id="html-code" name="html-code" class="code">
 &lt;h1 id="Txt"&gt;Hello World!!!&lt;/h1&gt;
@@ -188,35 +176,18 @@
     	    <div id="css-div">
     	        <header class="tab-header">
     	            <h2 class="heading">CSS</h2>
-    	            <button class="close-open-tab" onclick="">ok</button>
+    	            <button class="close-open-tab button">ok</button>
     	        </header>
-    	        <div id="css-code" name="css-code" class="code">body{
-    background:#000;
-    color:#fff;
-    text-align:center;
-}
-button{
-    background:#000;
-    color:#fff;
-    border:1px solid #fff;
-    border-radius:8px;
-    padding:8px 20px;
-    font-size:20px;
-    outline:none;
-}</div>
+    	        <div id="css-code" name="css-code" class="code">body{background:#000;color:#fff;text-align:center;}button{background:#000;color:#fff;border:1px solid #fff;border-radius:8px;padding:8px 20px;font-size:20px;outline:none;}</div>
     	    </div>
     	    
     	    <div id="js-div">
     	        <header class="tab-header">
     	            <h2 class="heading">JS</h2>
-    	            <button class="close-open-tab" onclick="">ok</button>
+    	            <button class="close-open-tab button">ok</button>
     	        </header>
-    	        <button id="RunJs">Run</button>
-    	        <div id="js-code" name="js-code" class="code">document.getElementById("btn")
-.addEventListener("click",e =>{
-    document.getElementById("Txt")
-    .innerText = "Hello ReWeb";
-});</div>
+    	        <button id="RunJs" class="runApp">Run</button>
+    	        <div id="js-code" name="js-code" class="code">document.getElementById("btn").addEventListener("click",e =>{document.getElementById("Txt").innerText = "Hello ReWeb";});</div>
     	    </div>
     	</section>
 	

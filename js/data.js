@@ -1,23 +1,32 @@
-const AvailableTheme=[
-    "ambiance",
-    "chaos",
+const AvailableThemeLight=[
+    //light
     "chrome",
     "clouds",
-    "clouds_midnight",
-    "cobalt",
     "crimson_editor",
     "dawn",
-    "dracula",
     "dreamweaver",
     "eclipse",
     "github",
+    "iplastic",
+    "katzenmilch",
+    "kuroir",
+    "solarized_light",
+    "sqlserver",
+    "textmate",
+    "tomorrow",
+    "xcode"
+    ];
+const AvailableThemeDark=[
+    //dark
+    "ambiance",
+    "chaos",
+    "clouds_midnight",
+    "cobalt",
+    "dracula",
     "gob",
     "gruvbox",
     "idle_fingers",
-    "iplastic",
-    "katzenmilch",
     "kr_theme",
-    "kuroir",
     "merbivore",
     "merbivore_soft",
     "mono_industrial",
@@ -26,16 +35,11 @@ const AvailableTheme=[
     "one_dark",
     "pastel_on_dark",
     "solarized_dark",
-    "solarized_light",
-    "sqlserver",
     "terminal",
-    "textmate",
-    "tomorrow",
     "tomorrow_night",
     "tomorrow_night_blue",
     "tomorrow_night_bright",
     "tomorrow_night_eighties",
     "twilight",
-    "vibrant_ink",
-    "xcode"
+    "vibrant_ink"
     ];
